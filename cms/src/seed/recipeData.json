@@ -1,0 +1,526 @@
+[
+    {
+        "title": "Banana Bread",
+        "description": "Put those ripe bananas to use in the best banana bread recipe ever.",
+        "rating": "4",
+        "servings": { "amount": "10" },
+        "prepTime": { "minutes": "10" },
+        "cookTime": { "hours": "1" },
+        "cuisine": "American",
+        "categories": ["Breakfast", "Dessert"],
+        "keywords": "fruit, baking",
+        "ingredients": [
+            { "amount": "2-3", "item": "Bananas", "id": "646e5f114f4cdc0aacad2f0c" },
+            { "amount": "1/3", "unit": "cup", "item": "Butter", "id": "646e5f094f4cdc0aacad2f0b" },
+            { "amount": "1/2", "unit": "tsp.", "item": "Baking soda", "id": "646e5f114f4cdc0aacad2f0e" },
+            { "amount": "1", "item": "pinch of Salt", "id": "646e5f094f4cdc0aacad2f0f" },
+            { "amount": "3/4", "unit": "cup", "item": "Sugar", "id": "646e5f114f4cdc0aacad2f0a" },
+            { "amount": "1", "item": "large Egg", "id": "646e5f114f4cdc0aacad2f1c" },
+            { "amount": "1", "unit": "tsp.", "item": "Vanilla extract", "id": "646e5f114f4cdc0aacad2f1b" },
+            { "amount": "1 1/2", "unit": "cup", "item": "Flour", "id": "646e5f094f4cdc0aacad2f0d" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Preheat the oven and prepare the pan:" }] },
+            {
+                "children": [{ "text": "Preheat the oven to 350°F (175°C), and butter an 8 x 4-inch loaf pan." }]
+            },
+            { "type": "h3", "children": [{ "text": "Mash the bananas and add the butter:" }] },
+            {
+                "children": [{ "text": "In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted butter into the mashed bananas." }]
+            },
+            { "type": "h3", "children": [{ "text": "Mix in the remaining ingredients:" }] },
+            {
+                "children": [{ "text": "Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in the flour." }]
+            }
+        ],
+        "slug": "banana-bread",
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Enchiladas",
+        "description": "This easy recipe for Tex-Mex cheese enchiladas is a family favorite!",
+        "rating": "5",
+        "servings": { "amount": "4" },
+        "prepTime": { "minutes": "15" },
+        "cookTime": { "minutes": "35" },
+        "cuisine": "Mexican",
+        "categories": ["Dinner"],
+        "keywords": "Tex-Mex",
+        "ingredients": [
+            { "amount": "3", "unit": "tbsp.", "item": "Oil", "id": "646e5f114f4cdc0aacad2e0c" },
+            { "amount": "12", "item": "Corn tortillas", "id": "646e5f094f4cdc0aacad2e0b" },
+            { "amount": "1/2", "item": "Onion", "id": "646e5f114f4cdc0aacad2e0e" },
+            { "amount": "1", "item": "clove Garlic", "id": "646e5f094f4cdc0aacad2e0f" },
+            { "amount": "14", "unit": "oz.", "item": "Crushed tomatoes", "id": "646e5f114f4cdc0aacad2e0a" },
+            { "amount": "3/4", "unit": "cup", "item": "Green chiles", "id": "646e5f094f4cdc0aacad2e0d" },
+            { "amount": "1/2", "unit": "cup", "item": "Water", "id": "646e5f094f4cdc0aacad2e1d" },
+            { "amount": "1/2", "unit": "tsp.", "item": "Oregano", "id": "646e5f114f4cdc0aacad2e1b" },
+            { "amount": "1", "unit": "lb.", "item": "Pepper jack cheese", "id": "646e5f114f4cdc0aacad2e1c" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Preheat the oven to 350°F." }] },
+            { "type": "h3", "children": [{ "text": "Lightly fry the tortillas to soften:" }] },
+            {
+                "children": [
+                    {
+                        "text": "In a large frying pan at medium-high heat, add a tablespoon of oil. When the oil is shimmering and hot, add a corn tortilla to the pan. Cook it for several seconds, use a metal spatula to turn it over, and cook it for few seconds more."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Make the enchilada sauce:" }] },
+            {
+                "children": [
+                    {
+                        "text": "Heat 2 teaspoons olive oil in a large sauté pan on medium heat. Add the chopped onion and cook for 5 to 6 minutes, until translucent. Add the garlic and cook for a minute more."
+                    }
+                ]
+            },
+            {
+                "children": [
+                    {
+                        "text": "Add the crushed tomatoes, green chiles, 1/2 cup of water, and oregano. Bring to a simmer and taste. If the sauce tastes too vinegary, add half a teaspoon of sugar to the sauce. Remove from heat."
+                    }
+                ]
+            }
+        ],
+        "slug": "enchiladas",
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Pasta Carbonara",
+        "description": "A classic Italian pasta dish with eggs, cheese, and pancetta.",
+        "rating": "4.5",
+        "servings": { "amount": "2" },
+        "prepTime": { "minutes": "10" },
+        "cookTime": { "minutes": "15" },
+        "cuisine": "Italian",
+        "categories": ["Dinner", "Weeknight"],
+        "keywords": "Pasta",
+        "ingredients": [
+            { "amount": "6", "unit": "ounces", "item": "Spaghetti", "id": "646e5f094f4cdc0aacad2e0b" },
+            { "amount": "2", "unit": "ounces", "item": "Pancetta", "id": "646e5f114f4cdc0aacad2e0c" },
+            { "amount": "2", "item": "Eggs", "id": "646e5f094f4cdc0aacad2e0d" },
+            { "amount": "1/2", "unit": "cup", "item": "Parmesan cheese", "id": "646e5f114f4cdc0aacad2e0e" },
+            { "amount": "1/4", "unit": "cup", "item": "Pecorino Romano cheese", "id": "646e5f094f4cdc0aacad2e0f" },
+            { "amount": "2", "item": "Cloves garlic", "id": "646e5f094f4cdc0aacad2e10" },
+            { "amount": "1/2", "unit": "cup", "item": "Fresh parsley leaves", "id": "646e5f114f4cdc0aacad2e11" },
+            { "amount": "Dash", "item": "Salt and pepper", "id": "646e5f114f4cdc0aacad2e12" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Cook the pasta:" }] },
+            { "children": [{ "text": "Bring a large pot of salted water to a boil. Cook the spaghetti until al dente according to package instructions. Drain and set aside." }] },
+            { "type": "h3", "children": [{ "text": "Prepare the sauce:" }] },
+            {
+                "children": [
+                    {
+                        "text": "In a large skillet, cook the pancetta over medium heat until crispy. Remove from the skillet and drain on a paper towel-lined plate. Leave the rendered fat in the skillet."
+                    }
+                ]
+            },
+            { "children": [{ "text": "In a bowl, whisk together the eggs, Parmesan cheese, Pecorino Romano cheese, minced garlic, and chopped parsley. Season with salt and pepper." }] },
+            { "type": "h3", "children": [{ "text": "Combine the pasta and sauce:" }] },
+            {
+                "children": [
+                    {
+                        "text": "Add the cooked spaghetti to the skillet with the rendered fat. Pour the egg-cheese mixture over the pasta and toss quickly to coat the spaghetti evenly. The heat from the pasta will cook the eggs and create a creamy sauce."
+                    }
+                ]
+            }
+        ],
+        "slug": "pasta-carbonara",
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Breaded Air Fryer Pork Chops",
+        "slug": "breaded-air-fryer-pork-chops",
+        "description": "These breaded pork chops, made in the air fryer, are perfectly tender and juicy. They require basic pantry ingredients and take just 10 minutes to cook. I like to use a Misto sprayer with my own oil, but feel free to use regular cooking spray.",
+        "categories": ["Dinner"],
+        "cuisine": "American",
+        "keywords": "Main Dishes,Special Collections,Main Dishes,Quick and Easy,Pork,Dinner,Everyday Cooking,Allrecipes Allstar Recipes,Boneless,Pork",
+        "rating": "4.7",
+        "prepTime": { "minutes": "10" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "4", "unit": "(5 ounce)", "item": "boneless, center-cut pork chops, 1-inch thick" },
+            { "amount": "1", "unit": "teaspoon", "item": "Cajun seasoning" },
+            { "amount": "1 ½", "unit": "cups", "item": "cheese and garlic croutons" },
+            { "amount": "2", "unit": "large", "item": "eggs" },
+            { "amount": null, "unit": null, "item": "cooking spray" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Preheat an air fryer to 400 degrees F (200 degrees C)." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Place pork chops on a plate and season both sides with Cajun seasoning." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            {
+                "children": [
+                    {
+                        "text": "Pulse croutons in a small food processor until fine; transfer to a shallow dish. Lightly beat eggs in a separate shallow dish. Working one at a time, dip pork chops into beaten egg, letting excess drip off; press into crouton breading to coat both sides and place breaded chop, unstacked, onto a plate. Repeat with remaining chops. Mist chops with cooking spray."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            {
+                "children": [
+                    {
+                        "text": "Spray the air fryer basket with cooking spray and arrange chops in a single layer in the air fryer basket. You may have to do two batches depending on the size of your air fryer."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            {
+                "children": [
+                    {
+                        "text": "Cook in the preheated air fryer for 5 minutes; flip chops and mist again with cooking spray if there are dry areas. Cook 5 minutes more. An instant-read thermometer inserted into the center of the chops should read 145 degrees F (63 degrees C)."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 6" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Quick Beef Stir-Fry",
+        "slug": "quick-beef-stir-fry",
+        "description": "Quick and easy beef stir-fry. I make this on my busiest weeknights.",
+        "categories": ["Dinner"],
+        "cuisine": "Chinese",
+        "keywords": "Beef,Beef,Beef,Quick and Easy,Beef,Asian,Dinner,Everyday Cooking,Main Dishes,30-Minute Meal Recipes",
+        "rating": "4.4",
+        "prepTime": { "minutes": "15" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "2", "unit": "tablespoons", "item": "vegetable oil" },
+            { "amount": "1", "unit": "pound", "item": "beef sirloin, cut into 2-inch strips" },
+            { "amount": "1 ½", "unit": "cups", "item": "fresh broccoli florets" },
+            { "amount": "1", "unit": null, "item": "red bell pepper, cut into matchsticks" },
+            { "amount": "2", "unit": null, "item": "carrots, thinly sliced" },
+            { "amount": "1", "unit": null, "item": "green onion, chopped" },
+            { "amount": "1", "unit": "teaspoon", "item": "minced garlic" },
+            { "amount": "2", "unit": "tablespoons", "item": "soy sauce" },
+            { "amount": "2", "unit": "tablespoons", "item": "sesame seeds, toasted" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Gather all ingredients." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Heat vegetable oil in a large wok or skillet over medium-high heat; cook and stir beef until browned, 3 to 4 minutes." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            {
+                "children": [
+                    { "text": "Move beef to the side of the wok and add broccoli, bell pepper, carrots, green onion, and garlic to the center of the wok. Cook and stir vegetables for 2 minutes." }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            { "children": [{ "text": "Stir beef into vegetables and season with soy sauce and sesame seeds. Continue to cook and stir until vegetables are tender, about 2 more minutes." }] },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Buttered Noodles",
+        "slug": "buttered-noodles",
+        "description": "Saucy, buttered noodles are simple to make and perfect to serve either as-is or alongside steak, chicken, or meatballs. Butter, Parmesan cheese, salt, and pepper are all you need for this quick and easy, kid-friendly dish, although fresh herbs and a little lemon juice could be added to amp up the flavor. It's such a delicious recipe, yet I get many questions on how to make it.",
+        "categories": ["Dinner"],
+        "cuisine": "American",
+        "keywords": "Fettuccini Recipes,Main Dishes,Quick and Easy,Butter Recipes,Pasta,Pasta and Noodles,Pasta,Dinner,Everyday Cooking,Pasta",
+        "rating": "4.6",
+        "prepTime": { "minutes": "5" },
+        "cookTime": { "minutes": "15" },
+        "servings": { "amount": "8 " },
+        "ingredients": [
+            { "amount": "1", "unit": "(16 ounce) package", "item": "fettuccine noodles" },
+            { "amount": "6", "unit": "tablespoons", "item": "butter, cut into pieces" },
+            { "amount": "⅓", "unit": "cup", "item": "grated Parmesan cheese" },
+            { "amount": null, "unit": null, "item": "salt and ground black pepper to taste" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Gather all ingredients." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Fill a large pot with lightly salted water and bring to a rolling boil." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            { "children": [{ "text": "Stir in fettuccine, bring back to a boil, and cook pasta over medium heat until tender yet firm to the bite, 8 to 10 minutes." }] },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            { "children": [{ "text": "Drain and return pasta to pot. Mix butter, Parmesan cheese, salt, and pepper into pasta until evenly combined." }] },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Easy Tuna Patties",
+        "slug": "easy-tuna-patties",
+        "description": "These tuna patties are delicious dipped in ketchup, mustard, or hot sauce. They are also great served as a hot sandwich.",
+        "categories": ["Dinner"],
+        "cuisine": "American",
+        "keywords": "Fish Cake Recipes,Tuna,Seafood,Quick and Easy,Kid-Friendly,Seafood,Canned Food,Dinner,Everyday Cooking,30-Minute Meal Recipes",
+        "rating": "4.6",
+        "prepTime": { "minutes": "15" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "2", "unit": null, "item": "eggs" },
+            { "amount": "2", "unit": "teaspoons", "item": "lemon juice" },
+            { "amount": "10", "unit": "tablespoons", "item": "Italian-seasoned bread crumbs" },
+            { "amount": "3", "unit": "tablespoons", "item": "grated Parmesan cheese" },
+            { "amount": "3", "unit": "(5 ounce) cans", "item": "tuna, drained" },
+            { "amount": "3", "unit": "tablespoons", "item": "diced onion" },
+            { "amount": "1", "unit": "pinch", "item": "ground black pepper" },
+            { "amount": "3", "unit": "tablespoons", "item": "vegetable oil" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            {
+                "children": [
+                    { "text": "Beat eggs and lemon juice in a bowl; stir in bread crumbs and Parmesan cheese to make a paste. Fold in tuna and onion until well combined; season with black pepper." }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Use your hands to shape tuna mixture into 8 (1-inch-thick) patties." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            { "children": [{ "text": "Heat vegetable oil in a skillet over medium heat. Fry patties in the hot oil until golden brown, about 5 minutes per side." }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Pan-Seared Tilapia",
+        "slug": "pan-seared-tilapia",
+        "description": "Learn how to cook tilapia with this easy, 15-minute recipe for pan-seared tilapia that's delicious and full of flavor. This simple method of cooking fish fillets is great for a weeknight meal. Serve with fresh veggies.",
+        "categories": ["Dinner"],
+        "cuisine": "American",
+        "keywords": "Main Dishes,Seafood Main Dishes,Seafood,Quick and Easy,Seafood,Dinner,30-Minute Meal Recipes,5 Ingredients,Fish,Seafood",
+        "rating": "4.6",
+        "prepTime": { "minutes": "5" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "4", "unit": "(4 ounce)", "item": "tilapia fillets" },
+            { "amount": null, "unit": null, "item": "salt and ground black pepper to taste" },
+            { "amount": "½", "unit": "cup", "item": "all-purpose flour" },
+            { "amount": "1", "unit": "tablespoon", "item": "olive oil" },
+            { "amount": "2", "unit": "tablespoons", "item": "unsalted butter, melted" },
+            { "amount": "1", "unit": "tablespoon", "item": "lemon juice, or to taste (Optional)" },
+            { "amount": "1", "unit": "teaspoon", "item": "chopped fresh flat-leaf parsley, or to taste (Optional)" },
+            { "amount": "½", "unit": "teaspoon", "item": "chopped fresh thyme, or to taste (Optional)" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Rinse tilapia fillets in cold water and pat dry with paper towels. Season both sides of each fillet with salt and pepper." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Place flour in a shallow dish. Gently press each fillet into the flour to coat and shake off any excess." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            {
+                "children": [
+                    {
+                        "text": "Heat olive oil in a large skillet over medium-high heat. Cook tilapia fillets in the hot oil, in batches if necessary, until fish flakes easily with a fork, about 4 minutes per side."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            { "children": [{ "text": "Brush melted butter onto the tilapia fillets in the last minute before removing from the skillet." }] },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Drizzle fillets with lemon juice and garnish with parsley and thyme." }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Chicken Marsala",
+        "slug": "chicken-marsala",
+        "description": "Chicken Marsala is an Italian-style recipe for tender pan-fried chicken breasts in a sweet Marsala wine and mushroom sauce.",
+        "categories": ["Dinner"],
+        "cuisine": "Italian",
+        "keywords": "Mushrooms,Main Dishes,Chicken Breast,Dinner,Cooking With Wine Recipes,European,30-Minute Meal Recipes,Pan-Fried Chicken,Italian,Chicken",
+        "rating": "4.6",
+        "prepTime": { "minutes": "10" },
+        "cookTime": { "minutes": "20" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "¼", "unit": "cup", "item": "all-purpose flour for coating" },
+            { "amount": "½", "unit": "teaspoon", "item": "salt" },
+            { "amount": "¼", "unit": "teaspoon", "item": "ground black pepper" },
+            { "amount": "½", "unit": "teaspoon", "item": "dried oregano" },
+            { "amount": "4", "unit": "medium", "item": "skinless, boneless chicken breast halves - pounded 1/4 inch thick" },
+            { "amount": "4", "unit": "tablespoons", "item": "butter" },
+            { "amount": "4", "unit": "tablespoons", "item": "olive oil" },
+            { "amount": "1", "unit": "cup", "item": "sliced mushrooms" },
+            { "amount": "½", "unit": "cup", "item": "Marsala wine" },
+            { "amount": "¼", "unit": "cup", "item": "cooking sherry" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Gather all ingredients." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "In a shallow dish or bowl, mix together the flour, salt, pepper and oregano." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            { "children": [{ "text": "Coat chicken pieces in flour mixture." }] },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            { "children": [{ "text": "In a large skillet, melt butter in oil over medium heat. Place chicken in the pan, and lightly brown." }] },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Turn over chicken pieces, and add mushrooms. Pour in wine and sherry." }] },
+            { "type": "h3", "children": [{ "text": "Step 6" }] },
+            { "children": [{ "text": "Cover skillet; simmer chicken 10 minutes, turning once, until no longer pink and juices run clear." }] },
+            { "type": "h3", "children": [{ "text": "Step 7" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Simple Beef Stroganoff",
+        "slug": "simple-beef-stroganoff",
+        "description": "This rich and creamy ground beef stroganoff with egg noodles is super simple to prepare, and ready to serve in under 30 minutes making it a great choice for busy weeknights. Garnish with freshly chopped parsley for added color and flavor.",
+        "categories": ["Dinner"],
+        "cuisine": "American",
+        "keywords": "Beef,Beef,Quick and Easy,Comfort Food Recipes,Pasta,Pasta and Noodles,Pasta,Dinner,Ground Beef Recipes,30-Minute Meal Recipes",
+        "rating": "4.1",
+        "prepTime": { "minutes": "5" },
+        "cookTime": { "minutes": "15" },
+        "servings": { "amount": "4 " },
+        "ingredients": [
+            { "amount": "1", "unit": "(8 ounce) package", "item": "egg noodles" },
+            { "amount": "1", "unit": "pound", "item": "ground beef" },
+            { "amount": "1", "unit": "(10.5 ounce) can", "item": "fat-free condensed cream of mushroom soup" },
+            { "amount": "1", "unit": "tablespoon", "item": "garlic powder" },
+            { "amount": "½", "unit": "cup", "item": "sour cream" },
+            { "amount": null, "unit": null, "item": "salt and ground black pepper to taste" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Gather all ingredients." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Sauté ground beef in a large skillet over medium heat until browned and crumbly; 5 to 10 minutes." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            {
+                "children": [
+                    {
+                        "text": "At the same time, fill a large pot with lightly salted water and bring to a rapid boil. Cook egg noodles at a boil until tender yet firm to the bite, 7 to 9 minutes. Drain and set aside."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            { "children": [{ "text": "Drain and discard any fat from the cooked beef. Stir condensed soup and garlic powder into the beef. Simmer for 10 minutes, stirring occasionally." }] },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Remove beef from the heat. Add egg noodles and stir to combine. Stir in sour cream and season with salt and pepper." }] },
+            { "type": "h3", "children": [{ "text": "Step 6" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Spicy Thai Basil Chicken Pad Krapow Gai",
+        "slug": "spicy-thai-basil-chicken-pad-krapow-gai",
+        "description": "My version of this classic Thai dish has spectacular taste even with regular basil instead of Thai or holy basil. The sauce actually acts like a glaze as the chicken mixture cooks over high heat. The recipe works best if you chop or grind your own chicken and have all ingredients prepped before you start cooking.",
+        "categories": ["Dinner"],
+        "cuisine": "Thai",
+        "keywords": "Special Collections,Herb Recipes,Cooking for Two,Chicken Thigh Recipes,Asian,Dinner,30-Minute Meal Recipes,Cook Once, Eat Twice Recipes,Chicken,Chicken",
+        "rating": "4.8",
+        "prepTime": { "minutes": "15" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "2 " },
+        "ingredients": [
+            { "amount": "⅓", "unit": "cup", "item": "chicken broth" },
+            { "amount": "1", "unit": "tablespoon", "item": "oyster sauce" },
+            { "amount": "1", "unit": "tablespoon", "item": "soy sauce, or as needed" },
+            { "amount": "2", "unit": "teaspoons", "item": "fish sauce" },
+            { "amount": "1", "unit": "teaspoon", "item": "white sugar" },
+            { "amount": "1", "unit": "teaspoon", "item": "brown sugar" },
+            { "amount": "2", "unit": "tablespoons", "item": "vegetable oil" },
+            { "amount": "1", "unit": "pound", "item": "skinless, boneless chicken thighs, coarsely chopped" },
+            { "amount": "¼", "unit": "cup", "item": "sliced shallots" },
+            { "amount": "4", "unit": "cloves", "item": "garlic, minced" },
+            { "amount": "2", "unit": "tablespoons", "item": "minced Thai chilies, Serrano, or other hot pepper" },
+            { "amount": "1", "unit": "cup", "item": "very thinly sliced fresh basil leaves" },
+            { "amount": "2", "unit": "cups", "item": "hot cooked rice" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            { "children": [{ "text": "Gather ingredients." }] },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            { "children": [{ "text": "Whisk chicken broth, oyster sauce, soy sauce, fish sauce, white sugar, and brown sugar together in a bowl until well blended." }] },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            { "children": [{ "text": "Heat large skillet over high heat. Drizzle in oil. Add chicken and stir fry until it loses its raw color, 2 to 3 minutes." }] },
+            { "type": "h3", "children": [{ "text": "Step 4" }] },
+            {
+                "children": [
+                    {
+                        "text": "Stir in shallots, garlic, and sliced chilies. Continue cooking on high heat until some of the juices start to caramelize in the bottom of the pan, about 2 or 3 more minutes."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 5" }] },
+            { "children": [{ "text": "Add about a tablespoon of the sauce mixture to the skillet; cook and stir until sauce begins to caramelize, about 1 minute." }] },
+            { "type": "h3", "children": [{ "text": "Step 6" }] },
+            {
+                "children": [
+                    {
+                        "text": "Pour in the rest of the sauce. Cook and stir until sauce has deglazed the bottom of the pan. Continue to cook until sauce glazes onto the meat, 1 or 2 more minutes. Remove from heat."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 7" }] },
+            { "children": [{ "text": "Stir in basil. Cook and stir until basil is wilted, about 20 seconds. Serve with rice." }] },
+            { "type": "h3", "children": [{ "text": "Step 8" }] },
+            { "children": [{ "text": "Serve hot and enjoy!" }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    },
+    {
+        "title": "Pesto Pasta",
+        "slug": "pesto-pasta",
+        "description": "Pesto pasta is easy to make and full of flavor. It tastes good hot or cold!",
+        "categories": ["Dinner"],
+        "cuisine": "Italian Inspired",
+        "keywords": "Main Dishes,Main Dishes,Pasta and Noodles,Dinner,Pasta,30-Minute Meal Recipes,Italian,300 Calorie Main Dish Recipes,15-Minute Meal Recipes,Pasta",
+        "rating": "4.3",
+        "prepTime": { "minutes": "5" },
+        "cookTime": { "minutes": "10" },
+        "servings": { "amount": "8 " },
+        "ingredients": [
+            { "amount": "1", "unit": "(16 ounce) package", "item": "pasta" },
+            { "amount": "2", "unit": "tablespoons", "item": "olive oil" },
+            { "amount": "½", "unit": "cup", "item": "chopped onion" },
+            { "amount": "2 ½", "unit": "tablespoons", "item": "pesto" },
+            { "amount": null, "unit": null, "item": "salt to taste" },
+            { "amount": null, "unit": null, "item": "ground black pepper to taste" },
+            { "amount": "2", "unit": "tablespoons", "item": "grated Parmesan cheese" }
+        ],
+        "instructions": [
+            { "type": "h3", "children": [{ "text": "Step 1" }] },
+            {
+                "children": [
+                    {
+                        "text": "Fill a large pot with lightly salted water and bring to a rolling boil. Stir in pasta and return to a boil. Cook pasta uncovered, stirring occasionally, until tender yet firm to the bite, about 8 to 10 minutes. Drain and transfer into a large bowl."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 2" }] },
+            {
+                "children": [
+                    {
+                        "text": "Meanwhile, heat oil in a frying pan over medium-low heat. Add onion; cook and stir until softened, about 3 minutes. Stir in pesto, salt, and pepper until warmed through."
+                    }
+                ]
+            },
+            { "type": "h3", "children": [{ "text": "Step 3" }] },
+            { "children": [{ "text": "Add pesto mixture to hot pasta; stir in grated cheese and toss well to coat." }] }
+        ],
+        "_status": "published",
+        "datePublished": "2023-06-04T06:21:47.659+00:00"
+    }
+]

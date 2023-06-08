@@ -1,0 +1,128 @@
+@import '~payload/scss';
+
+.field-type.row {
+    gap: 20px;
+}
+
+#field-servings,
+#field-prepTime,
+#field-cookTime {
+    flex-grow: 0;
+}
+
+.group-field__wrap .group-field__header {
+    margin-bottom: 0;
+}
+
+.group-field__title {
+    margin: 0;
+    padding-bottom: 0.4807692308rem;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+.field-type .group-field.group-field--within-row {
+    padding: 0 10px;
+}
+
+.input-group {
+    display: flex;
+    display: inline-block;
+    gap: 10px;
+    width: max-content;
+    margin-bottom: 1.9230769231rem;
+    background-color: var(--theme-input-bg);
+    border: 1px solid var(--theme-elevation-150);
+    border-radius: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 2, 4, 0.05), 0 10px 4px -8px rgba(0, 2, 4, 0.02);
+}
+
+.input-group.input-single {
+    padding: 0.9615384615rem;
+}
+
+.input-group.input-left {
+    border-right: none;
+    padding: 0.9615384615rem 2px 0.9615384615rem 5px;
+}
+.input-group.input-right {
+    border-left: none;
+    padding: 0.9615384615rem 15px 0.9615384615rem 2px;
+}
+
+.input-group:hover {
+    border-color: var(--theme-elevation-250);
+}
+
+.input-group:focus,
+.input-group:focus-within,
+.input-group:active {
+    border-color: var(--theme-elevation-400);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.input,
+.label {
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    line-height: 1.9230769231rem;
+}
+
+.input {
+    width: 2.5rem;
+    background-color: transparent;
+    color: #b0f8d6;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.input-single .input {
+    text-align: center;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button,
+input[type='number'] {
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield !important;
+}
+
+.input::placeholder,
+.label {
+    color: #bbb;
+}
+
+@media (max-width: 1024px) {
+    .render-fields.field-type.row {
+        display: flex;
+    }
+
+    .field-type.row #field-servings,
+    .field-type.row #field-prepTime,
+    .field-type.row #field-cookTime {
+        width: auto !important;
+    }
+
+    .field-type .group-field.group-field--within-row {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .field-type.row #field-servings,
+    .field-type.row #field-prepTime,
+    .field-type.row #field-cookTime {
+        width: 100% !important;
+    }
+}
