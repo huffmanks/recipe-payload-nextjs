@@ -12,7 +12,11 @@ module.exports = {
             'alt-dark': '#258637',
             'alt-light': '#b5edc5',
         },
-        extend: {},
+        extend: {
+            gridTemplateColumns: {
+                'auto-fill-250': 'repeat(auto-fill, minmax(min(250px, 100%), 1fr))',
+            },
+        },
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/line-clamp')],
 }

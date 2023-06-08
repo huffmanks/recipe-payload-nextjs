@@ -12,17 +12,10 @@ import Rating from '../components/InputRange/config'
 dotenv.config()
 
 const beforeChangeHook: CollectionBeforeChangeHook = async ({ data, originalDoc }) => {
-    if (originalDoc) {
-        const recipeSchema = await generateRecipeSchema(originalDoc.id)
-        const modifiedData = {
-            ...data,
-            recipeSchema: JSON.stringify(recipeSchema),
-        }
+    if (!originalDoc) return data
 
-        return modifiedData
-    } else {
-        return data
-    }
+    const recipeSchema = await generateRecipeSchema(originalDoc.id)
+    return { ...data, recipeSchema: JSON.stringify(recipeSchema) }
 }
 
 const afterDeleteHook: CollectionAfterDeleteHook = async ({ doc }) => {

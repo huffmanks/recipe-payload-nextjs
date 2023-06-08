@@ -32,7 +32,7 @@ const Media: CollectionConfig = {
         resizeOptions: {
             width: 1200,
             height: 630,
-            position: 'attention',
+            position: 'entropy',
         },
         formatOptions: {
             format: 'jpg',
@@ -45,6 +45,18 @@ const Media: CollectionConfig = {
                 name: 'thumbnail',
                 width: 400,
                 height: 400,
+                position: 'attention',
+                formatOptions: {
+                    format: 'jpg',
+                    options: {
+                        quality: 100,
+                    },
+                },
+            },
+            {
+                name: 'portrait',
+                width: 384,
+                height: 576,
                 position: 'attention',
                 formatOptions: {
                     format: 'jpg',
