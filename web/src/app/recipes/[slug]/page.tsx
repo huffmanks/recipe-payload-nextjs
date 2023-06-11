@@ -6,11 +6,6 @@ import Image from '@/components/Image'
 
 import { getRecipeBySlug } from '@/services/recipes'
 
-type Props = {
-    params: { id: string }
-    searchParams: { [key: string]: string | string[] | undefined }
-}
-
 export async function generateMetadata({ params }, parent?: ResolvingMetadata): Promise<Metadata> {
     const recipe = await getRecipeBySlug(params.slug)
 
