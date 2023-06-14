@@ -1,3 +1,4 @@
+import qs from 'qs'
 import { Recipe } from '@cms-types'
 
 export const getRecipes = async (): Promise<Recipe[]> => {
@@ -14,8 +15,55 @@ export const getRecipeBySlug = async (slug: string): Promise<Recipe> => {
     return recipe.docs[0]
 }
 
-export const getRecipesByCuisine = async (cuisine: string): Promise<Recipe[]> => {
-    const data = await fetch(`http://localhost:3001/api/recipes/?where[cuisine.name][equals]=${cuisine}`)
+export const getRecipesBySearch = async (search: string): Promise<Recipe[]> => {
+    const query = {
+        or: [
+            {
+                title: {
+                    contains: search,
+                },
+            },
+            {
+                description: {
+                    contains: search,
+                },
+            },
+            {
+                'cuisine.name': {
+                    contains: search,
+                },
+            },
+            {
+                'categories.name': {
+                    contains: search,
+                },
+            },
+            {
+                keywords: {
+                    contains: search,
+                },
+            },
+            {
+                'ingredients.item': {
+                    contains: search,
+                },
+            },
+            {
+                'instructions.children.text': {
+                    contains: search,
+                },
+            },
+        ],
+    }
+
+    const stringifiedQuery = qs.stringify(
+        {
+            where: query,
+        },
+        { addQueryPrefix: true }
+    )
+
+    const data = await fetch(`http://localhost:3001/api/recipes${stringifiedQuery}`)
     const recipe = await data.json()
 
     return recipe.docs
