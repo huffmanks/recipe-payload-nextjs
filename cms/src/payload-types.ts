@@ -18,12 +18,14 @@ export interface Config {
 export interface Category {
     id: string
     name?: string
+    recipes?: Recipe[]
     updatedAt: string
     createdAt: string
 }
 export interface Cuisine {
     id: string
     name?: string
+    recipes?: Recipe[]
     updatedAt: string
     createdAt: string
 }

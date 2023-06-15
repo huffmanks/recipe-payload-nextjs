@@ -38,10 +38,10 @@ const Recipe = async ({ params }) => {
                 <>
                     {recipe?.recipeSchema && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(recipe.recipeSchema) }} />}
                     <header>
-                        <h1 className='text-4xl mb-2'>{recipe.title}</h1>
+                        <h1 className='mb-2 text-4xl text-primary '>{recipe.title}</h1>
                         {recipe.image && <Image className='mb-4' src={recipe.image.url} alt={recipe.image.alt} />}
                     </header>
-                    <div className='border-s-4 border-slate-600 mb-10 ps-4'>{recipe.description}</div>
+                    <div className='mb-10 border-s-4 border-secondary ps-4'>{recipe.description}</div>
                     <section className='mb-4'>
                         <div>{recipe.datePublished.split('T')[0]}</div>
                         <div>

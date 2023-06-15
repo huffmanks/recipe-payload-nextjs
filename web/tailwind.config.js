@@ -3,20 +3,24 @@ module.exports = {
     content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
     theme: {
         colors: {
-            'main-dark': '#0d1116',
-            'main-light': '#dbdfe2',
-            'gray-dark': '#20262f',
-            'gray-light': '#1f2329',
-            'primary-dark': '#15202e',
-            'primary-light': '#608cbd',
-            'alt-dark': '#258637',
-            'alt-light': '#b5edc5',
-        },
-        extend: {
-            gridTemplateColumns: {
-                'auto-fill-250': 'repeat(auto-fill, minmax(min(250px, 100%), 1fr))',
+            transparent: 'transparent',
+            current: 'currentColor',
+            type: {
+                light: '#02262c',
+                dark: '#f4f4f5',
+                muted: '#8f8f8f',
             },
+            surface: {
+                light: '#ffffff',
+                dark: '#02262c',
+                // dark: '#181818',
+                muted: '#f7f7f7',
+            },
+            primary: '#fba193',
+            secondary: '#aee5d8',
+            accent: '#fcc4bb',
         },
+        extend: {},
     },
-    plugins: [],
+    plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
 }

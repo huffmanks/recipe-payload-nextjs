@@ -56,12 +56,7 @@ export const getRecipesBySearch = async (search: string): Promise<Recipe[]> => {
         ],
     }
 
-    const stringifiedQuery = qs.stringify(
-        {
-            where: query,
-        },
-        { addQueryPrefix: true }
-    )
+    const stringifiedQuery = qs.stringify({ where: query }, { addQueryPrefix: true })
 
     const data = await fetch(`http://localhost:3001/api/recipes${stringifiedQuery}`)
     const recipe = await data.json()

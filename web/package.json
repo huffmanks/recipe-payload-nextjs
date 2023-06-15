@@ -28,6 +28,9 @@
     "devDependencies": {
         "@types/escape-html": "^1.0.2",
         "@types/qs": "^6.9.7",
-        "@types/slate": "^0.47.11"
+        "@types/slate": "^0.47.11",
+        "prettier": "^2.8.8",
+        "prettier-plugin-tailwindcss": "^0.3.0",
+        "tailwind-scrollbar": "^3.0.4"
     }
 }

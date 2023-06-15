@@ -32,6 +32,7 @@ const seedDB = async () => {
     //     },
     // })
 
+    // Get admin user
     const user = await payload.find({
         collection: 'users',
         where: {
@@ -43,6 +44,7 @@ const seedDB = async () => {
 
     const userId = user.docs[0].id
 
+    // Create images
     const createdImages = await Promise.all(
         images.map(async (image) => {
             const tmp = image.slice(0, -4)
@@ -66,6 +68,7 @@ const seedDB = async () => {
         })
     )
 
+    // Create categories
     const createdCategories = await Promise.all(
         categories.map(async (category) => {
             const createdCategory = await payload.create({
@@ -76,6 +79,7 @@ const seedDB = async () => {
         })
     )
 
+    // Create cuisines
     const createdCuisines = await Promise.all(
         cuisines.map(async (cuisine) => {
             const createdCuisine = await payload.create({
@@ -86,16 +90,13 @@ const seedDB = async () => {
         })
     )
 
+    // Create recipes
     const createdRecipes = await Promise.all(
         recipeData.map(async (recipe) => {
             const imageId = createdImages
                 .filter((img) => img.filename.split('.')[0] === recipe.slug)
                 .map((img) => img.id)
                 .toString()
-            // const imageId = createdImages
-            //     .filter((img) => img.alt === recipe.slug)
-            //     .map((img) => img.id)
-            //     .toString()
 
             const categoryIds = createdCategories.filter((item) => recipe.categories.includes(item.name)).map((item) => item.id)
 
@@ -114,7 +115,59 @@ const seedDB = async () => {
                     author: userId,
                 },
             })
+
             return createdRecipe
+        })
+    )
+
+    // Update categories
+    await Promise.all(
+        createdCategories.map(async (category) => {
+            const categoryRecipes = await payload.find({
+                collection: 'recipes',
+                where: {
+                    'categories.name': { equals: category.name },
+                },
+            })
+
+            const recipeIds = categoryRecipes.docs.map((recipe) => recipe.id)
+
+            await payload.update({
+                collection: 'categories',
+                where: {
+                    name: { equals: category.name },
+                },
+                data: {
+                    recipes: recipeIds,
+                },
+            })
+        })
+    )
+
+    // Update cuisines
+    await Promise.all(
+        createdCuisines.map(async (cuisine) => {
+            const cuisineRecipes = await payload.find({
+                collection: 'recipes',
+                where: {
+                    'cuisine.name': { equals: cuisine.name },
+                },
+            })
+
+            const recipeIds = cuisineRecipes.docs.map((recipe) => recipe.id)
+
+            console.log('cuisine.name', cuisine.name)
+            console.log('recipeIds', recipeIds)
+
+            await payload.update({
+                collection: 'cuisines',
+                where: {
+                    name: { equals: cuisine.name },
+                },
+                data: {
+                    recipes: recipeIds,
+                },
+            })
         })
     )
 

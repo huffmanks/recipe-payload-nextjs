@@ -6,6 +6,12 @@ h3:not(:has(+ p)) {
     margin-bottom: 32px;
 }
 
+.search-bar:has(.search-btn:focus) .search-divider,
+.search-bar:has(.search-btn:hover) .search-divider {
+    background-color: transparent;
+    transition-duration: 200ms;
+}
+
 .navbar-notch-top {
     --top: linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat, radial-gradient(farthest-side, #000 98%, #0000) bottom/100px 100px no-repeat;
     -webkit-mask: var(--top);
@@ -17,45 +23,4 @@ h3:not(:has(+ p)) {
     -webkit-mask: var(--bottom);
     mask: var(--bottom);
     margin-top: -40px;
-}
-
-/* Firefox */
-.scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: #dbdfe2 #20262f;
-}
-
-/* Chrome, Edge and Safari */
-.scrollbar-block::-webkit-scrollbar {
-    width: 8px;
-}
-
-.scrollbar-inline::-webkit-scrollbar {
-    height: 8px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-    border-radius: 5px;
-    background-color: #20262f;
-}
-
-.scrollbar::-webkit-scrollbar-track:hover {
-    background-color: #20262f;
-}
-
-.scrollbar::-webkit-scrollbar-track:active {
-    background-color: #20262f;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: #dbdfe2;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: #258637;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:active {
-    background-color: #258637;
 }
