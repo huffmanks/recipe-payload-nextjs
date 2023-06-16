@@ -1,17 +1,17 @@
+'use client'
 import Link from 'next/link'
 
 import { getCategories } from '@/services/categories'
 import { Category } from '@cms-types'
 
-const CategoriesList = async () => {
-    const categories = await getCategories()
+const CategoriesList = async ({ categories }) => {
+    // const categories = await getCategories()
     return (
         <>
-            <h2 className='mb-4 text-xl font-semibold'>Categories</h2>
             <section className='flex snap-x snap-proximity scroll-px-8 gap-4 overflow-x-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-secondary scrollbar-thumb-rounded-full'>
                 {categories.map((category: Category) => (
                     <>
-                        <Link href={`/recipes?query=${category.name}`}>
+                        <Link href={`/recipes?query=${category.name.toLowerCase()}`}>
                             <button
                                 aria-label={`search for ${category.name} recipes`}
                                 className='group mb-6 flex h-20 w-20 shrink-0 cursor-pointer snap-center flex-col items-center justify-center gap-2 rounded-lg bg-surface-muted text-xl outline-none transition-colors duration-300 ease-in-out hover:bg-primary focus:bg-primary'

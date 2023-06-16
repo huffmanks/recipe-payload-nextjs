@@ -34,6 +34,7 @@ export const categories = [
     { name: 'Beef' },
     { name: 'Pork' },
     { name: 'Chicken' },
+    { name: 'Pasta' },
     { name: 'Turkey' },
     { name: 'Veggie' },
 ]

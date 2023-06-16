@@ -7,6 +7,7 @@ const Recipes = async ({ searchParams }) => {
 
     return (
         <>
+            <h1 className='mb-8 text-4xl'>Recipes</h1>
             <div className='mx-6 my-10'>{recipes && <RecipesList recipes={recipes} />}</div>
         </>
     )

@@ -1,13 +1,20 @@
-import Link from 'next/link'
+'use client'
 
 import SearchBar from '@/components/SearchBar'
 import CategoriesList from '@/components/CategoriesList'
+import RecipesList from '@/components/RecipesList'
+import { sortAndFilterByRating } from '@/utilities'
+import { useRecipes } from '@/services/context'
 
 interface Props {
     params: { query: string }
 }
 
 const Home = ({ params }: Props) => {
+    const { recipes, categories } = useRecipes()
+
+    const recommendedRecipes = sortAndFilterByRating({ data: recipes, limit: 5 })
+
     return (
         <>
             <div className='mx-6 my-10'>
@@ -29,7 +36,13 @@ const Home = ({ params }: Props) => {
                 </div>
 
                 <div className='mb-8'>
-                    <CategoriesList />
+                    <h2 className='mb-4 text-xl font-semibold'>Categories</h2>
+                    <CategoriesList categories={categories} />
+                </div>
+
+                <div className='mb-8'>
+                    <h2 className='mb-4 text-xl font-semibold'>Recommendations</h2>
+                    <RecipesList recipes={recommendedRecipes} />
                 </div>
             </div>
         </>

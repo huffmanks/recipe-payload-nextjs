@@ -156,9 +156,6 @@ const seedDB = async () => {
 
             const recipeIds = cuisineRecipes.docs.map((recipe) => recipe.id)
 
-            console.log('cuisine.name', cuisine.name)
-            console.log('recipeIds', recipeIds)
-
             await payload.update({
                 collection: 'cuisines',
                 where: {

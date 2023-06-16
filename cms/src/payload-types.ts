@@ -79,7 +79,7 @@ export interface Recipe {
     title: string
     image?: Media
     description?: string
-    rating?: number | string
+    rating?: number
     servings?: {
         amount?: string
     }
