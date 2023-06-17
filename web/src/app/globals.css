@@ -11,16 +11,3 @@ h3:not(:has(+ p)) {
     background-color: transparent;
     transition-duration: 200ms;
 }
-
-.navbar-notch-top {
-    --top: linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat, radial-gradient(farthest-side, #000 98%, #0000) bottom/100px 100px no-repeat;
-    -webkit-mask: var(--top);
-    mask: var(--top);
-}
-
-.navbar-notch-bottom {
-    --bottom: radial-gradient(calc(10px + 50px) at 50% -10px, #0000 98%, #000);
-    -webkit-mask: var(--bottom);
-    mask: var(--bottom);
-    margin-top: -40px;
-}

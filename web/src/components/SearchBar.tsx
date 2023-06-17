@@ -19,7 +19,7 @@ const SearchBar = ({ params }) => {
                         className='search-btn group flex h-full items-center justify-center rounded-r-full pl-3 pr-4 text-3xl outline-none transition-colors duration-300 ease-in-out hover:bg-primary focus:bg-primary'>
                         <svg
                             className='fill-primary transition-colors duration-300 ease-in-out group-hover:fill-type-dark group-focus:fill-type-dark'
-                            stroke-width='0'
+                            strokeWidth='0'
                             viewBox='0 0 24 24'
                             height='1em'
                             width='1em'

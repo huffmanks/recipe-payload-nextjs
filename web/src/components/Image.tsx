@@ -14,9 +14,9 @@ const Image = ({ src, alt, type, className }: Props) => {
     const height = type === 'thumbnail' ? 400 : 630
 
     return (
-        <div className='w-full'>
-            <NextImage className={className} src={src} alt={alt} width={width} height={height} priority />
-        </div>
+        <>
+            <NextImage className={`object-cover ${className}`} src={src} alt={alt} width={width} height={height} priority />
+        </>
     )
 }
 

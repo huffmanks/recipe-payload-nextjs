@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 
-import RecipeProvider from '@/services/context'
 import BottomNav from '@/components/BottomNav'
 
 import './globals.css'
@@ -17,9 +16,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <body className={`${inter.className} bg-surface-light text-type-light dark:bg-surface-dark dark:text-type-dark`}>
-                <RecipeProvider>
-                    <main className='min-h-screen'>{children}</main>
-                </RecipeProvider>
+                <main className='min-h-screen'>{children}</main>
 
                 <BottomNav />
             </body>
