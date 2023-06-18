@@ -45,7 +45,7 @@ const Media: CollectionConfig = {
                 name: 'thumbnail',
                 width: 400,
                 height: 400,
-                position: 'attention',
+                position: 'entropy',
                 formatOptions: {
                     format: 'jpg',
                     options: {
@@ -54,10 +54,10 @@ const Media: CollectionConfig = {
                 },
             },
             {
-                name: 'portrait',
-                width: 384,
-                height: 576,
-                position: 'attention',
+                name: 'hero',
+                width: 900,
+                height: 600,
+                position: 'entropy',
                 formatOptions: {
                     format: 'jpg',
                     options: {

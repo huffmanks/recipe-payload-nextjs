@@ -50,7 +50,7 @@ export interface Media {
             filesize?: number
             filename?: string
         }
-        portrait?: {
+        hero?: {
             url?: string
             width?: number
             height?: number

@@ -22,21 +22,25 @@ export const images = [
 
 export const categories = [
     { name: 'Breakfast' },
+    { name: 'Brunch' },
     { name: 'Lunch' },
     { name: 'Dinner' },
+    { name: 'Appetizers' },
+    { name: 'Dessert' },
     { name: 'Drink' },
     { name: 'Snack' },
-    { name: 'Dessert' },
-    { name: 'Brunch' },
+    { name: 'Soup' },
     { name: 'Weeknight' },
-    { name: 'Appetizers' },
-    { name: 'Seafood' },
     { name: 'Beef' },
     { name: 'Pork' },
     { name: 'Chicken' },
     { name: 'Pasta' },
+    { name: 'Seafood' },
     { name: 'Turkey' },
     { name: 'Veggie' },
+    { name: 'Grill' },
+    { name: 'Instant Pot' },
+    { name: 'Slow Cooker' },
 ]
 
 export const cuisines = [
