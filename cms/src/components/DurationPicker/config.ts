@@ -10,13 +10,20 @@ const DurationPicker: Field = {
             type: 'group',
             fields: [
                 {
-                    name: 'amount',
+                    name: 'quantity',
                     type: 'text',
                     admin: {
                         components: {
                             Field: InputField,
                             Cell,
                         },
+                    },
+                },
+                {
+                    name: 'yield',
+                    type: 'text',
+                    admin: {
+                        disabled: true,
                     },
                 },
             ],

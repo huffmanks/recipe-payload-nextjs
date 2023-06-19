@@ -14,12 +14,6 @@ const Cuisines: CollectionConfig = {
             type: 'text',
             unique: true,
         },
-        {
-            name: 'recipes',
-            type: 'relationship',
-            relationTo: 'recipes',
-            hasMany: true,
-        },
     ],
 }
 

@@ -55,14 +55,14 @@ const Recipe = async ({ params }) => {
                             <Fragment key={ingredient.id}>
                                 {!ingredient?.unit ? (
                                     <div>
-                                        <span>{ingredient.amount} </span>
-                                        <span>{ingredient.item}</span>
+                                        <span>{ingredient.quantity} </span>
+                                        <span>{ingredient.name}</span>
                                     </div>
                                 ) : (
                                     <div>
-                                        <span>{ingredient.amount} </span>
+                                        <span>{ingredient.quantity} </span>
                                         <span>{ingredient.unit} </span>
-                                        <span>{ingredient.item}</span>
+                                        <span>{ingredient.name}</span>
                                     </div>
                                 )}
                             </Fragment>

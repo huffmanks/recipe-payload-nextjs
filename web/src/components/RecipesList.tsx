@@ -20,7 +20,7 @@ const RecipesList = ({ recipes, isTopRated, isNew }: Props) => {
                                 {recipe?.image && (
                                     <Image
                                         className='mb-2 h-72 w-full rounded-2xl transition-all duration-300 ease-in-out group-hover:scale-[.98] group-focus:scale-[.98]'
-                                        src={recipe.image.sizes.portrait.url}
+                                        src={recipe.image.sizes.hero.url}
                                         alt={recipe.image.alt}
                                     />
                                 )}

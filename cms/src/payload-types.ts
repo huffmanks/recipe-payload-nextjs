@@ -18,14 +18,12 @@ export interface Config {
 export interface Category {
     id: string
     name?: string
-    recipes?: Recipe[]
     updatedAt: string
     createdAt: string
 }
 export interface Cuisine {
     id: string
     name?: string
-    recipes?: Recipe[]
     updatedAt: string
     createdAt: string
 }
@@ -62,7 +60,7 @@ export interface Media {
 }
 export interface User {
     id: string
-    image?: Media
+    image?: string | Media
     name?: string
     role: 'admin' | 'user'
     updatedAt: string
@@ -70,6 +68,8 @@ export interface User {
     email?: string
     resetPasswordToken?: string
     resetPasswordExpiration?: string
+    salt?: string
+    hash?: string
     loginAttempts?: number
     lockUntil?: string
     password?: string
@@ -81,7 +81,8 @@ export interface Recipe {
     description?: string
     rating?: number
     servings?: {
-        amount?: string
+        quantity?: string
+        yield?: string
     }
     prepTime?: {
         hours?: string
@@ -91,13 +92,21 @@ export interface Recipe {
         hours?: string
         minutes?: string
     }
-    cuisine?: Cuisine
-    categories?: string[] | Category[]
+    cuisines?: Cuisine[]
+    categories?: Category[]
     keywords?: string
-    ingredients?: {
-        amount?: string
+    nutrition?: {
+        quantity?: string
         unit?: string
-        item?: string
+        id?: string
+    }[]
+    ingredients?: {
+        sentence?: string
+        quantity?: string
+        unit?: string
+        name?: string
+        comment?: string
+        isLabel?: boolean
         id?: string
     }[]
     instructions?: {

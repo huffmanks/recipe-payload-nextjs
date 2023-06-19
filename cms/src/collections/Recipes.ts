@@ -8,6 +8,7 @@ import DurationPicker from '../components/DurationPicker/config'
 import { formatSlug } from '../utilities/formatSlug'
 import { generateRecipeSchema } from '../utilities/generateRecipeSchema'
 import Rating from '../components/InputRange/config'
+import { formatIngredientSentence } from '../utilities/formatIngredientSentence'
 
 dotenv.config()
 
@@ -30,8 +31,8 @@ const afterDeleteHook: CollectionAfterDeleteHook = async ({ doc }) => {
 const Recipes: CollectionConfig = {
     slug: 'recipes',
     admin: {
-        defaultColumns: ['title', 'author', 'cuisine', 'categories', '_status'],
-        listSearchableFields: ['author', 'description', 'rating', 'cuisine', 'categories', '_status'],
+        defaultColumns: ['title', 'author', 'cuisines', 'categories', '_status'],
+        listSearchableFields: ['author', 'description', 'rating', 'cuisines', 'categories', '_status'],
         useAsTitle: 'title',
         preview: (doc) => {
             if (doc?.slug && doc._status === 'published') {
@@ -64,7 +65,7 @@ const Recipes: CollectionConfig = {
         drafts: true,
     },
     hooks: {
-        beforeValidate: [formatSlug],
+        beforeValidate: [formatSlug, formatIngredientSentence],
         beforeChange: [beforeChangeHook],
         afterDelete: [afterDeleteHook],
     },
@@ -96,9 +97,10 @@ const Recipes: CollectionConfig = {
                         Rating,
                         DurationPicker,
                         {
-                            name: 'cuisine',
+                            name: 'cuisines',
                             type: 'relationship',
                             relationTo: 'cuisines',
+                            hasMany: true,
                         },
                         {
                             name: 'categories',
@@ -110,6 +112,20 @@ const Recipes: CollectionConfig = {
                             name: 'keywords',
                             type: 'text',
                             label: 'Keywords (healthy, chocolate, etc.)',
+                        },
+                        {
+                            name: 'nutrition',
+                            type: 'array',
+                            fields: [
+                                {
+                                    name: 'quantity',
+                                    type: 'text',
+                                },
+                                {
+                                    name: 'unit',
+                                    type: 'text',
+                                },
+                            ],
                         },
                     ],
                 },
@@ -126,7 +142,14 @@ const Recipes: CollectionConfig = {
                             },
                             fields: [
                                 {
-                                    name: 'amount',
+                                    name: 'sentence',
+                                    type: 'text',
+                                    admin: {
+                                        disabled: true,
+                                    },
+                                },
+                                {
+                                    name: 'quantity',
                                     type: 'text',
                                 },
                                 {
@@ -134,18 +157,26 @@ const Recipes: CollectionConfig = {
                                     type: 'text',
                                 },
                                 {
-                                    name: 'item',
+                                    name: 'name',
                                     type: 'text',
+                                },
+                                {
+                                    name: 'comment',
+                                    type: 'text',
+                                },
+                                {
+                                    name: 'isLabel',
+                                    type: 'checkbox',
+                                    admin: {
+                                        disabled: true,
+                                    },
                                 },
                             ],
                             admin: {
                                 initCollapsed: true,
                                 components: {
                                     RowLabel: ({ data, index }: PropsWithChildren<RowLabelArgs>) => {
-                                        Object.keys(data).forEach((key) => data[key] === undefined && delete data[key])
-                                        const formattedString = data?.unit ? `${data?.amount} ${data?.unit} ${data?.item}` : `${data?.amount} ${data?.item}`
-
-                                        return data?.item ? formattedString : `Ingredient ${String(index).padStart(2, '0')}`
+                                        return data?.item ? data.sentence : `Ingredient ${String(index).padStart(2, '0')}`
                                     },
                                 },
                             },

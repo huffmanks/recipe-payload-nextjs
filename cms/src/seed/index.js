@@ -100,10 +100,7 @@ const seedDB = async () => {
 
             const categoryIds = createdCategories.filter((item) => recipe.categories.includes(item.name)).map((item) => item.id)
 
-            const cuisineId = createdCuisines
-                .filter((item) => item.name === recipe.cuisine)
-                .map((item) => item.id)
-                .toString()
+            const cuisineIds = createdCuisines.filter((item) => recipe.cuisines.includes(item.name)).map((item) => item.id)
 
             const createdRecipe = await payload.create({
                 collection: 'recipes',
@@ -111,60 +108,12 @@ const seedDB = async () => {
                     ...recipe,
                     image: imageId,
                     categories: categoryIds,
-                    cuisine: cuisineId,
+                    cuisines: cuisineIds,
                     author: userId,
                 },
             })
 
             return createdRecipe
-        })
-    )
-
-    // Update categories
-    await Promise.all(
-        createdCategories.map(async (category) => {
-            const categoryRecipes = await payload.find({
-                collection: 'recipes',
-                where: {
-                    'categories.name': { equals: category.name },
-                },
-            })
-
-            const recipeIds = categoryRecipes.docs.map((recipe) => recipe.id)
-
-            await payload.update({
-                collection: 'categories',
-                where: {
-                    name: { equals: category.name },
-                },
-                data: {
-                    recipes: recipeIds,
-                },
-            })
-        })
-    )
-
-    // Update cuisines
-    await Promise.all(
-        createdCuisines.map(async (cuisine) => {
-            const cuisineRecipes = await payload.find({
-                collection: 'recipes',
-                where: {
-                    'cuisine.name': { equals: cuisine.name },
-                },
-            })
-
-            const recipeIds = cuisineRecipes.docs.map((recipe) => recipe.id)
-
-            await payload.update({
-                collection: 'cuisines',
-                where: {
-                    name: { equals: cuisine.name },
-                },
-                data: {
-                    recipes: recipeIds,
-                },
-            })
         })
     )
 

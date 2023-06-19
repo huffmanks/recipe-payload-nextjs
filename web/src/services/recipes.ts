@@ -29,7 +29,7 @@ export const getRecipesBySearch = async (search: string): Promise<Recipe[]> => {
                 },
             },
             {
-                'cuisine.name': {
+                'cuisines.name': {
                     contains: search,
                 },
             },
@@ -44,7 +44,7 @@ export const getRecipesBySearch = async (search: string): Promise<Recipe[]> => {
                 },
             },
             {
-                'ingredients.item': {
+                'ingredients.name': {
                     contains: search,
                 },
             },
