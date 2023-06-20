@@ -2,7 +2,7 @@ import qs from 'qs'
 import { Recipe } from '@cms-types'
 
 export const getRecipes = async (): Promise<Recipe[]> => {
-    const data = await fetch('http://localhost:3001/api/recipes')
+    const data = await fetch('http://localhost:3001/api/recipes?limit=100')
     const recipes = await data.json()
 
     return recipes.docs
@@ -58,7 +58,7 @@ export const getRecipesBySearch = async (search: string): Promise<Recipe[]> => {
 
     const stringifiedQuery = qs.stringify({ where: query }, { addQueryPrefix: true })
 
-    const data = await fetch(`http://localhost:3001/api/recipes${stringifiedQuery}`)
+    const data = await fetch(`http://localhost:3001/api/recipes${stringifiedQuery}&limit=100`)
     const recipe = await data.json()
 
     return recipe.docs

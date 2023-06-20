@@ -9,10 +9,10 @@ const SearchBar = ({ params }) => {
     return (
         <>
             <form className='flex w-full' action={`/recipes?${params.query}`}>
-                <div className='search-bar flex w-full items-center rounded-full bg-surface-muted text-sm shadow-sm  focus-within:ring-2 focus-within:ring-inset focus-within:ring-secondary'>
+                <div className='search-bar flex w-full items-center rounded-full bg-surface-light text-sm shadow-sm  focus-within:ring-2 focus-within:ring-inset focus-within:ring-secondary'>
                     <input type='text' autoComplete='off' defaultValue={query} name='query' placeholder='Search any recipes' className='grow rounded-l-full bg-transparent px-6 py-4 outline-none' />
 
-                    <div className='search-divider h-3/5 w-0.5 bg-type-muted transition-colors duration-1000 ease-in-out'></div>
+                    <div className='search-divider h-3/5 w-0.5 bg-surface-muted transition-colors duration-1000 ease-in-out'></div>
 
                     <button
                         type='submit'

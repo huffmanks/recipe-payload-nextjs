@@ -50,7 +50,7 @@ const serialize = (children: Children): ReactElement[] =>
         switch (node.type) {
             case 'h1':
                 return (
-                    <h1 className='text-4xl mb-2' key={i}>
+                    <h1 className='mb-2 text-4xl' key={i}>
                         {serialize(node.children)}
                     </h1>
                 )
@@ -62,13 +62,13 @@ const serialize = (children: Children): ReactElement[] =>
                 )
             case 'h3':
                 return (
-                    <h3 className='text-xl font-bold' key={i}>
+                    <h3 className='mb-1 font-bold' key={i}>
                         {serialize(node.children)}
                     </h3>
                 )
             case 'h4':
                 return (
-                    <h4 className='text-lg font-bold' key={i}>
+                    <h4 className='mb-1 text-sm font-bold' key={i}>
                         {serialize(node.children)}
                     </h4>
                 )
@@ -80,7 +80,7 @@ const serialize = (children: Children): ReactElement[] =>
                 )
             case 'h6':
                 return (
-                    <h6 className='text-sm uppercase font-bold' key={i}>
+                    <h6 className='text-sm font-bold uppercase' key={i}>
                         {serialize(node.children)}
                     </h6>
                 )

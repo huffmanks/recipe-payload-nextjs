@@ -1,10 +1,10 @@
-import { Fragment } from 'react'
 import { Metadata, ResolvingMetadata } from 'next'
+import Link from 'next/link'
+
+import { getRecipeBySlug } from '@/services/recipes'
 
 import RichText from '@/components/RichText'
 import Image from '@/components/Image'
-
-import { getRecipeBySlug } from '@/services/recipes'
 
 export async function generateMetadata({ params }, parent?: ResolvingMetadata): Promise<Metadata> {
     const recipe = await getRecipeBySlug(params.slug)
@@ -37,41 +37,56 @@ const Recipe = async ({ params }) => {
             {recipe && (
                 <>
                     {recipe?.recipeSchema && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(recipe.recipeSchema) }} />}
-                    <header>
-                        <h1 className='mb-2 text-4xl text-primary '>{recipe.title}</h1>
-                        {recipe.image && <Image className='mb-4' src={recipe.image.url} alt={recipe.image.alt} />}
-                    </header>
-                    <div className='mb-10 border-s-4 border-secondary ps-4'>{recipe.description}</div>
-                    <section className='mb-4'>
-                        <div>{recipe.datePublished.split('T')[0]}</div>
-                        <div>
-                            <span>By </span>
-                            {recipe.author.name}
-                        </div>
-                    </section>
-                    <section className='mb-8'>
-                        <h2 className='text-2xl font-bold'>Ingredients</h2>
-                        {recipe.ingredients.map((ingredient) => (
-                            <Fragment key={ingredient.id}>
-                                {!ingredient?.unit ? (
-                                    <div>
-                                        <span>{ingredient.quantity} </span>
-                                        <span>{ingredient.name}</span>
-                                    </div>
-                                ) : (
-                                    <div>
-                                        <span>{ingredient.quantity} </span>
-                                        <span>{ingredient.unit} </span>
-                                        <span>{ingredient.name}</span>
-                                    </div>
-                                )}
-                            </Fragment>
-                        ))}
-                    </section>
 
-                    <section>
-                        <h2 className='text-2xl font-bold'>Instructions</h2>
-                        <RichText content={recipe.instructions} />
+                    <header className='relative'>
+                        {recipe.image && <Image src={recipe.image.sizes.hero.url} alt={recipe.image.alt} />}
+                        <Link href='/' className='absolute left-4 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-surface-light pb-0.5 text-xl leading-none'>
+                            &larr;
+                        </Link>
+                    </header>
+
+                    <section className='relative bg-surface-light'>
+                        <div className='absolute -top-4 h-8 w-full rounded-t-2xl bg-surface-light'>
+                            <span className='absolute left-1/2 top-1/2 h-1.5 w-16 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-surface-muted'></span>
+                        </div>
+                        <div className='mx-6 pb-4 pt-6'>
+                            <div className='mb-3 flex items-center justify-between'>
+                                <div>
+                                    <h1 className='text-xl font-semibold'>{recipe.title}</h1>
+                                    <div className='text-xs text-type-muted'>By {recipe.author.name}</div>
+                                </div>
+                                <div className='font-semibold'>{recipe.rating}</div>
+                            </div>
+                            <div className='mb-5 flex gap-4 text-xs text-type-muted'>
+                                <div>{recipe.cookTime.minutes}m</div>
+                                <div>Easy</div>
+                                <div>512 kcal</div>
+                            </div>
+                            <div className='mb-5'>
+                                <h2 className='mb-1.5 text-lg font-semibold'>Description</h2>
+                                <div className='text-sm text-type-muted'>{recipe.description}</div>
+                            </div>
+                            <div className='mb-8'>
+                                <h2 className='mb-4 text-lg font-semibold'>Ingredients</h2>
+                                <div className='grid gap-4'>
+                                    {recipe.ingredients.map((ing) => (
+                                        <div className='flex w-full gap-4'>
+                                            <img className='h-8 w-8 rounded-lg object-cover' src='/memoji.png' alt='memoji' />
+                                            <div className='w-full text-type-muted'>{ing.name}</div>
+                                            <div className='inline-flex justify-end'>
+                                                {ing.quantity}
+                                                {ing.unit}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2 className='mb-4 text-lg font-semibold'>Instructions</h2>
+                                <RichText content={recipe.instructions} />
+                            </div>
+                        </div>
                     </section>
                 </>
             )}

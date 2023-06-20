@@ -1,9 +1,10 @@
+import { getRecipes } from '@/services/recipes'
+import { sortAndFilterByRating, sortAndFilterByCreatedAt } from '@/utilities'
+
 import SearchBar from '@/components/SearchBar'
 import CategoriesList from '@/components/CategoriesList'
 import RecipesList from '@/components/RecipesList'
-
-import { getRecipes } from '@/services/recipes'
-import { sortAndFilterByRating, sortAndFilterByCreatedAt } from '@/utilities'
+import BottomNav from '@/components/BottomNav'
 
 interface Props {
     params: { query: string }
@@ -52,6 +53,7 @@ const Home = async ({ params }: Props) => {
 
                 <div className='h-96'></div>
             </div>
+            <BottomNav />
         </>
     )
 }

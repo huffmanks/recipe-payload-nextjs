@@ -14,7 +14,7 @@ const CategoriesList = async () => {
                         <Link
                             href={`/recipes?query=${category.name.toLowerCase()}`}
                             aria-label={`search for ${category.name} recipes`}
-                            className='group mb-6 flex h-20 w-20 shrink-0 cursor-pointer snap-center flex-col items-center justify-center gap-2 rounded-lg bg-surface-muted text-xl outline-none transition-colors duration-300 ease-in-out hover:bg-primary focus:bg-primary'
+                            className='group mb-6 flex h-20 w-20 shrink-0 cursor-pointer snap-center flex-col items-center justify-center gap-2 rounded-lg bg-surface-light text-xl outline-none transition-colors duration-300 ease-in-out hover:bg-primary focus:bg-primary'
                             key={category.id}>
                             <svg
                                 className='fill-primary transition-colors duration-300 ease-in-out group-hover:fill-type-dark group-focus:fill-type-dark'
