@@ -70,19 +70,24 @@ const Recipe = async ({ params }) => {
                                 <h2 className='mb-4 text-lg font-semibold'>Ingredients</h2>
                                 <div className='grid gap-4'>
                                     {recipe.ingredients.map((ing) => (
-                                        <div className='flex w-full gap-4'>
-                                            <img className='h-8 w-8 rounded-lg object-cover' src='/memoji.png' alt='memoji' />
-                                            <div className='w-full text-type-muted'>{ing.name}</div>
-                                            <div className='inline-flex justify-end'>
-                                                {ing.quantity}
-                                                {ing.unit}
-                                            </div>
+                                        <div key={ing.id}>
+                                            {ing.isLabel ? (
+                                                <div className='text-medium w-full'>{ing.sentence}</div>
+                                            ) : (
+                                                <div className='flex w-full gap-4'>
+                                                    <img className='h-8 w-8 rounded-lg object-cover' src='/memoji.png' alt='memoji' />
+                                                    <div className='text-type-muted'>{ing.name}</div>
+                                                    <div className='ml-auto'>
+                                                        {ing.quantity} {ing.unit}
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
-                            <div>
+                            <div className='pb-8'>
                                 <h2 className='mb-4 text-lg font-semibold'>Instructions</h2>
                                 <RichText content={recipe.instructions} />
                             </div>

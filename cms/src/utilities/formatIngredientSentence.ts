@@ -6,6 +6,7 @@ interface Ingredients {
     unit?: string
     name?: string
     comment?: string
+    isLabel?: boolean
     id?: string
 }
 
@@ -19,7 +20,15 @@ function deepEqual(x: any, y: any) {
 export const formatIngredientSentence: CollectionBeforeValidateHook = ({ data, operation, originalDoc }) => {
     if (operation === 'create') {
         data.ingredients.map((ing: Ingredients) => {
-            ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}, ${ing?.comment}`
+            if (ing.isLabel) {
+                ing.sentence = ing.comment
+            } else {
+                if (!ing.comment) {
+                    ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}`
+                } else {
+                    ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}, ${ing.comment}`
+                }
+            }
         })
     }
 
@@ -27,7 +36,15 @@ export const formatIngredientSentence: CollectionBeforeValidateHook = ({ data, o
         const isCurrentAndOriginalIngredientsTheSame = deepEqual(data.ingredients, originalDoc.ingredients)
         if (isCurrentAndOriginalIngredientsTheSame) return
         data.ingredients.map((ing: Ingredients) => {
-            ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}, ${ing?.comment}`
+            if (ing.isLabel) {
+                ing.sentence = ing.comment
+            } else {
+                if (!ing.comment) {
+                    ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}`
+                } else {
+                    ing.sentence = `${ing?.quantity} ${ing?.unit} ${ing?.name}, ${ing.comment}`
+                }
+            }
         })
     }
 }

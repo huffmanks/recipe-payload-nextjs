@@ -31,7 +31,7 @@ const afterDeleteHook: CollectionAfterDeleteHook = async ({ doc }) => {
 const Recipes: CollectionConfig = {
     slug: 'recipes',
     admin: {
-        defaultColumns: ['title', 'author', 'cuisines', 'categories', '_status'],
+        defaultColumns: ['title', 'cuisines', 'categories', '_status'],
         listSearchableFields: ['author', 'description', 'rating', 'cuisines', 'categories', '_status'],
         useAsTitle: 'title',
         preview: (doc) => {
@@ -142,41 +142,65 @@ const Recipes: CollectionConfig = {
                             },
                             fields: [
                                 {
+                                    name: 'isLabel',
+                                    type: 'checkbox',
+                                },
+                                {
                                     name: 'sentence',
                                     type: 'text',
                                     admin: {
-                                        disabled: true,
+                                        readOnly: true,
                                     },
                                 },
                                 {
                                     name: 'quantity',
                                     type: 'text',
+                                    admin: {
+                                        condition: (data, siblingData) => {
+                                            if (siblingData.isLabel) {
+                                                return false
+                                            } else {
+                                                return true
+                                            }
+                                        },
+                                    },
                                 },
                                 {
                                     name: 'unit',
                                     type: 'text',
+                                    admin: {
+                                        condition: (data, siblingData) => {
+                                            if (siblingData.isLabel) {
+                                                return false
+                                            } else {
+                                                return true
+                                            }
+                                        },
+                                    },
                                 },
                                 {
                                     name: 'name',
                                     type: 'text',
+                                    admin: {
+                                        condition: (data, siblingData) => {
+                                            if (siblingData.isLabel) {
+                                                return false
+                                            } else {
+                                                return true
+                                            }
+                                        },
+                                    },
                                 },
                                 {
                                     name: 'comment',
                                     type: 'text',
-                                },
-                                {
-                                    name: 'isLabel',
-                                    type: 'checkbox',
-                                    admin: {
-                                        disabled: true,
-                                    },
                                 },
                             ],
                             admin: {
                                 initCollapsed: true,
                                 components: {
                                     RowLabel: ({ data, index }: PropsWithChildren<RowLabelArgs>) => {
-                                        return data?.item ? data.sentence : `Ingredient ${String(index).padStart(2, '0')}`
+                                        return data?.sentence ? data.sentence : `Ingredient ${String(index).padStart(2, '0')}`
                                     },
                                 },
                             },

@@ -15,28 +15,28 @@ const dropDB = async () => {
     const deletedImages = await payload.delete({
         collection: 'media',
         where: {
-            id: { contains: '6' },
+            id: { exists: true },
         },
     })
 
     const deletedCategories = await payload.delete({
         collection: 'categories',
         where: {
-            id: { contains: '6' },
+            id: { exists: true },
         },
     })
 
     const deletedCuisines = await payload.delete({
         collection: 'cuisines',
         where: {
-            id: { contains: '6' },
+            id: { exists: true },
         },
     })
 
     const deletedRecipes = await payload.delete({
         collection: 'recipes',
         where: {
-            id: { contains: '6' },
+            id: { exists: true },
         },
     })
 

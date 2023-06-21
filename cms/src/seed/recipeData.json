@@ -42,7 +42,7 @@
                 "isLabel": false
             },
             { "sentence": "1/8 tsp kosher salt", "quantity": "1/8", "unit": "tsp", "name": "kosher salt", "comment": "", "id": "582bb79a-ca86-4ca2-967e-e6a773ce6d06", "isLabel": false },
-            { "sentence": "1 medium avocado", "quantity": "1", "unit": "medium", "name": "avocado", "comment": "", "id": "3599104e-3c7c-42f4-9f7b-3b67f7223ccf", "isLabel": false },
+            { "sentence": "1 avocado", "quantity": "1", "unit": "", "name": "avocado", "comment": "", "id": "3599104e-3c7c-42f4-9f7b-3b67f7223ccf", "isLabel": false },
             { "sentence": "1 tbsp rice vinegar", "quantity": "1", "unit": "tbsp", "name": "rice vinegar", "comment": "", "id": "24dfb9fd-1a8c-41f2-8914-102c3e888763", "isLabel": false },
             { "sentence": "1/2 cucumber", "quantity": "1/2", "unit": "", "name": "cucumber", "comment": "", "id": "19d775c6-5254-497e-9a9b-e7403859ad1d", "isLabel": false },
             {
@@ -57,11 +57,11 @@
             { "sentence": "3 c sushi rice", "quantity": "3", "unit": "c", "name": "sushi rice", "comment": "", "id": "54c550bd-4cd6-4a97-94c4-145898a9211b", "isLabel": false },
 
             {
-                "sentence": "sesame seeds, for garnish (optional)",
+                "sentence": "sesame seeds, for garnish",
                 "quantity": "",
                 "unit": "",
                 "name": "sesame seeds",
-                "comment": "for garnish (optional)",
+                "comment": "for garnish",
                 "id": "1baf9be9-3213-47b5-be3e-54456ebde3f0",
                 "isLabel": false
             },
@@ -141,7 +141,7 @@
             "unsaturatedFatContent": { "quantity": "0", "unit": "g" }
         },
         "ingredients": [
-            { "sentence": "For the patties", "quantity": "", "unit": "", "name": "", "comment": "For the patties:", "id": "60fecae9-1fdc-4653-90cc-8bfd3a63f46a", "isLabel": true },
+            { "sentence": "For the patties:", "quantity": "", "unit": "", "name": "", "comment": "For the patties:", "id": "60fecae9-1fdc-4653-90cc-8bfd3a63f46a", "isLabel": true },
             {
                 "sentence": "15 oz black beans",
                 "quantity": "15",
@@ -408,10 +408,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "3 cloves garlic, minced",
+                "sentence": "3 garlic cloves, minced",
                 "quantity": "3",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "minced",
                 "id": "b720fca4-e713-4e96-b53e-e1642fea10b6",
                 "isLabel": false
@@ -472,15 +472,15 @@
                 "isLabel": false
             },
             {
-                "sentence": "1 lb monterey jack cheese, shredded",
+                "sentence": "1 lb Monterey Jack cheese, shredded",
                 "quantity": "1",
                 "unit": "lb",
-                "name": "monterey jack cheese",
+                "name": "Monterey Jack cheese",
                 "comment": "shredded",
                 "id": "9633867e-25bf-469b-bb90-96158ca73348",
                 "isLabel": false
             },
-            { "sentence": "Optional toppings:", "quantity": "", "unit": "", "name": "Optional toppings:", "comment": "", "id": "b38b5eb0-e3e7-4763-8c96-89ef196d4d91", "isLabel": true },
+            { "sentence": "Optional toppings:", "quantity": "", "unit": "", "name": "", "comment": "Optional toppings:", "id": "b38b5eb0-e3e7-4763-8c96-89ef196d4d91", "isLabel": true },
             { "sentence": "sour cream", "quantity": "", "unit": "", "name": "Sour cream", "comment": "", "id": "7fd7fa8e-e8bc-45f3-813c-4951f8d270e2", "isLabel": false },
             { "sentence": "cilantro, chopped", "quantity": "", "unit": "", "name": "cilantro", "comment": "chopped", "id": "5e55bea5-bf29-4bb0-84ff-9be2f79d119b", "isLabel": false },
             { "sentence": "jalapenos, sliced", "quantity": "", "unit": "", "name": "jalapenos", "comment": "sliced", "id": "50593149-9996-4038-b757-f8a5484779b6", "isLabel": false }
@@ -561,8 +561,8 @@
                 "sentence": "1 1/2 tsp active dry yeast",
                 "quantity": "1 1/2",
                 "unit": "tsp",
-                "name": "dry yeast",
-                "comment": "active",
+                "name": "active dry yeast",
+                "comment": "",
                 "id": "8f428110-fd78-4cdc-8894-053355fcdc83",
                 "isLabel": false
             },
@@ -679,13 +679,13 @@
             },
             { "sentence": "8 c water", "quantity": "8", "unit": "c", "name": "water", "comment": "", "id": "6c169fc2-667d-42a1-88e8-c53b3537ac8d", "isLabel": false },
             { "sentence": "2 tsp salt", "quantity": "2", "unit": "tsp", "name": "salt", "comment": "", "id": "3ec3ce5e-b86e-4b1f-9a78-2dea3dc1bf4b", "isLabel": false },
-            { "sentence": "2 cloves", "quantity": "2", "unit": "cloves", "name": "", "comment": "", "id": "ef244cd9-98a9-4045-8649-2a92aef37264", "isLabel": false },
+            { "sentence": "2 cloves", "quantity": "2", "unit": "", "name": "cloves", "comment": "", "id": "ef244cd9-98a9-4045-8649-2a92aef37264", "isLabel": false },
             { "sentence": "2 cardamom pods, green", "quantity": "2", "unit": "", "name": "cardamom pods", "comment": "green", "id": "903ffc1e-d0f3-42ab-befd-1933a966aaa8", "isLabel": false },
             {
-                "sentence": "2 in piece of cinnamon",
-                "quantity": "2",
-                "unit": "in",
-                "name": "piece of cinnamon",
+                "sentence": "1 cinnamon stick",
+                "quantity": "",
+                "unit": "",
+                "name": "cinnamon stick",
                 "comment": "",
                 "id": "685f3801-0fe5-4b4f-91a1-3c7165fdbd2b",
                 "isLabel": false
@@ -711,7 +711,7 @@
             { "sentence": "1/2 tsp cumin seeds", "quantity": "1/2", "unit": "tsp", "name": "cumin seeds", "comment": "", "id": "aec51242-fae2-4e89-b89c-479176663a03", "isLabel": false },
             { "sentence": "1/4 tsp chili flakes", "quantity": "1/4", "unit": "tsp", "name": "chili flakes", "comment": "", "id": "1d66cbe2-bf86-44a9-a3bd-8f9254e3e163", "isLabel": false },
             { "sentence": "1 onion, chopped", "quantity": "1", "unit": "", "name": "onion", "comment": "chopped", "id": "e978de7b-aec0-4fea-93f9-acd0825cc0a0", "isLabel": false },
-            { "sentence": "3 cloves garlic, chopped", "quantity": "3", "unit": "cloves", "name": "garlic", "comment": "chopped", "id": "2d8d3479-f4e0-425b-b76f-574b4ba1f6e7", "isLabel": false },
+            { "sentence": "3 garlic cloves, chopped", "quantity": "3", "unit": "", "name": "garlic cloves", "comment": "chopped", "id": "2d8d3479-f4e0-425b-b76f-574b4ba1f6e7", "isLabel": false },
             { "sentence": "1/4 tsp turmeric", "quantity": "1/4", "unit": "tsp", "name": "turmeric", "comment": "", "id": "551a4c2f-d358-4bf9-9069-2b4e4d7f1240", "isLabel": false }
         ],
         "instructions": [
@@ -898,6 +898,15 @@
             },
             { "sentence": "To serve:", "quantity": "", "unit": "", "name": "", "comment": "To serve:", "id": "009e206d-b74b-4cac-a977-3f09efe568d5", "isLabel": true },
             {
+                "sentence": "cooked rice",
+                "quantity": "",
+                "unit": "",
+                "name": "cooked rice",
+                "comment": "",
+                "id": "5f3ae6de-8f57-4316-bbb1-afc97ea04ecf",
+                "isLabel": false
+            },
+            {
                 "sentence": "naan bread",
                 "quantity": "",
                 "unit": "",
@@ -1016,7 +1025,7 @@
                 "id": "b66d2546-9a2b-4a1d-b8d2-8fac4ed941ae",
                 "isLabel": false
             },
-            { "sentence": "3 cloves garlic, minced", "quantity": "3", "unit": "cloves", "name": "garlic", "comment": "minced", "id": "c4526b8e-05d4-4b9c-923b-688cb578cd4e", "isLabel": false },
+            { "sentence": "3 garlic cloves, minced", "quantity": "3", "unit": "", "name": "garlic cloves", "comment": "minced", "id": "c4526b8e-05d4-4b9c-923b-688cb578cd4e", "isLabel": false },
             { "sentence": "1 tsp cumin", "quantity": "1", "unit": "tsp", "name": "cumin", "comment": "", "id": "e9ad6b1e-2424-4c56-8d69-bda3652d50f3", "isLabel": false },
             { "sentence": "1 tsp paprika", "quantity": "1", "unit": "tsp", "name": "paprika", "comment": "", "id": "3d3c395b-6b7b-4f5d-9b80-b149e3c8af21", "isLabel": false },
             { "sentence": "1 1/4 tsp salt", "quantity": "1 1/4", "unit": "tsp", "name": "salt", "comment": "", "id": "ccba1a38-e568-4dd8-928b-a6532bca5e03", "isLabel": false },
@@ -1048,7 +1057,7 @@
                 "isLabel": false
             },
             { "sentence": "2 tsp ginger, grated", "quantity": "2", "unit": "tsp", "name": "ginger", "comment": "grated", "id": "a3ed0457-af1f-43fe-a019-415925a1b9c2", "isLabel": false },
-            { "sentence": "4 cloves garlic, minced", "quantity": "4", "unit": "cloves", "name": "garlic", "comment": "minced", "id": "35b69c62-bf72-4139-90a3-f1a664e18c22", "isLabel": false },
+            { "sentence": "4 garlic cloves, minced", "quantity": "4", "unit": "", "name": "garlic cloves", "comment": "minced", "id": "35b69c62-bf72-4139-90a3-f1a664e18c22", "isLabel": false },
             {
                 "sentence": "1 tbsp ground coriander",
                 "quantity": "1",
@@ -1071,10 +1080,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "14 oz fire-roasted tomatoes",
-                "quantity": "1",
+                "sentence": "14 oz fire roasted tomatoes",
+                "quantity": "14",
                 "unit": "oz",
-                "name": "fire-roasted tomatoes",
+                "name": "fire roasted tomatoes",
                 "comment": "",
                 "id": "ffe37b37-35a5-45a6-86ee-9e92015f6efb",
                 "isLabel": false
@@ -1098,7 +1107,7 @@
                 "isLabel": false
             },
             { "sentence": "1/2 tsp salt", "quantity": "1/2", "unit": "tsp", "name": "salt", "comment": "", "id": "6949c9d5-c93d-4656-97e7-83e3d3bb5166", "isLabel": false },
-            { "sentence": "rice, to serve", "quantity": "", "unit": "", "name": "rice", "comment": "to serve", "id": "4747a322-d66d-4d5d-9c17-734700073827", "isLabel": false },
+            { "sentence": "cooked rice, to serve", "quantity": "", "unit": "", "name": "cooked rice", "comment": "to serve", "id": "4747a322-d66d-4d5d-9c17-734700073827", "isLabel": false },
             { "sentence": "cilantro, to garnish", "quantity": "", "unit": "", "name": "cilantro", "comment": "to garnish", "id": "aede742d-d93b-4e7a-9c67-f00396909585", "isLabel": false }
         ],
         "instructions": [
@@ -1239,7 +1248,7 @@
                 "isLabel": false
             },
             { "sentence": "2 oz peach schnapps", "quantity": "2", "unit": "oz", "name": "peach schnapps", "comment": "", "id": "f2850997-8044-4382-b0f7-599d3e1383a1", "isLabel": false },
-            { "sentence": "Ice", "quantity": "", "unit": "", "name": "Ice", "comment": "", "id": "48a3fceb-5ec4-46e6-bcf3-02f6cb12442c", "isLabel": false }
+            { "sentence": "ice, to serve", "quantity": "", "unit": "", "name": "ice", "comment": "to serve", "id": "48a3fceb-5ec4-46e6-bcf3-02f6cb12442c", "isLabel": false }
         ],
         "instructions": [
             { "type": "h3", "children": [{ "text": "Zest and juice the lime:" }] },
@@ -1451,10 +1460,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "4 cloves garlic, sliced",
+                "sentence": "4 garlic cloves, sliced",
                 "quantity": "4",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "sliced",
                 "id": "46cbf340-2c81-46b8-a42c-b600ddf75fe1",
                 "isLabel": false
@@ -1596,9 +1605,9 @@
                 "isLabel": false
             },
             {
-                "sentence": "2 large eggs, lightly beaten",
+                "sentence": "2 eggs, lightly beaten",
                 "quantity": "2",
-                "unit": "large",
+                "unit": "",
                 "name": "eggs",
                 "comment": "lightly beaten",
                 "id": "241a64ea-d5d4-4ca4-9865-5b81855fb113",
@@ -1636,7 +1645,7 @@
                 "id": "28509157-f5c7-4db1-81ee-b37c2feee361",
                 "isLabel": false
             },
-            { "sentence": "3 cloves garlic, minced", "quantity": "3", "unit": "cloves", "name": "garlic", "comment": "minced", "id": "5fe87635-a058-4b17-b5bc-270bd2567205", "isLabel": false },
+            { "sentence": "3 garlic cloves, minced", "quantity": "3", "unit": "", "name": "garlic cloves", "comment": "minced", "id": "5fe87635-a058-4b17-b5bc-270bd2567205", "isLabel": false },
             {
                 "sentence": "28 oz diced tomatoes",
                 "quantity": "28",
@@ -1665,11 +1674,11 @@
                 "isLabel": false
             },
             {
-                "sentence": "1/4 tsp kosher salt, plus more to taste",
+                "sentence": "1/4 tsp kosher salt, more to taste",
                 "quantity": "1/4",
                 "unit": "tsp",
                 "name": "kosher salt",
-                "comment": "plus more to taste",
+                "comment": "more to taste",
                 "id": "b11e4398-bc79-41e5-842d-c1ed782beff1",
                 "isLabel": false
             },
@@ -1800,7 +1809,7 @@
                 "isLabel": false
             },
             { "sentence": "1 onion, chopped", "quantity": "1", "unit": "", "name": "onion", "comment": "chopped", "id": "923046ed-97a1-4a3b-88e7-6ba7b1dc6de0", "isLabel": false },
-            { "sentence": "4 cloves garlic, chopped", "quantity": "4", "unit": "cloves", "name": "garlic", "comment": "chopped", "id": "3cebedfc-6941-4f5f-b16e-7407e23e7342", "isLabel": false },
+            { "sentence": "4 garlic cloves, chopped", "quantity": "4", "unit": "", "name": "garlic cloves", "comment": "chopped", "id": "3cebedfc-6941-4f5f-b16e-7407e23e7342", "isLabel": false },
             {
                 "sentence": "1 tbsp rosemary, minced",
                 "quantity": "1",
@@ -1969,10 +1978,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "3 cloves garlic, minced",
+                "sentence": "3 garlic cloves, minced",
                 "quantity": "3",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "minced",
                 "id": "3978d697-8ca8-4eac-9584-474d95aa18c5",
                 "isLabel": false
@@ -2062,15 +2071,15 @@
                 "isLabel": false
             },
             {
-                "sentence": "2 cloves garlic, minced",
+                "sentence": "2 garlic cloves, minced",
                 "quantity": "2",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "minced",
                 "id": "300e5aeb-850b-413f-ae62-875236f1c26e",
                 "isLabel": false
             },
-            { "sentence": "3-4 eggs", "quantity": "3-4", "unit": "", "name": "eggs", "comment": "", "id": "8610ac0d-ad68-4485-87fd-9c8c040daaf2", "isLabel": false },
+            { "sentence": "3 eggs", "quantity": "3", "unit": "", "name": "eggs", "comment": "", "id": "8610ac0d-ad68-4485-87fd-9c8c040daaf2", "isLabel": false },
             {
                 "sentence": "1 c parmesan cheese, grated",
                 "quantity": "1",
@@ -2177,9 +2186,9 @@
                 "isLabel": false
             },
             {
-                "sentence": "1 package active dry yeast",
+                "sentence": "1/4 oz active dry yeast",
                 "quantity": "1",
-                "unit": "package",
+                "unit": "oz",
                 "name": "active dry yeast",
                 "comment": "",
                 "id": "6ddeeb5d-c0ba-4083-8189-e831f408436c",
@@ -2224,11 +2233,11 @@
                 "isLabel": false
             },
             {
-                "sentence": "Cornmeal, to help slide the pizza onto the pizza stone",
+                "sentence": "dash cornmeal",
                 "quantity": "",
                 "unit": "dash",
-                "name": "Cornmeal",
-                "comment": "to help slide the pizza onto the pizza stone",
+                "name": "cornmeal",
+                "comment": "",
                 "id": "e92b9267-fcc8-4f69-82d1-641d37e8bbd5",
                 "isLabel": false
             },
@@ -2251,9 +2260,9 @@
                 "isLabel": false
             },
             {
-                "sentence": "1 package fresh mozzarella cheese",
-                "quantity": "1",
-                "unit": "package",
+                "sentence": "8 oz fresh mozzarella cheese",
+                "quantity": "8",
+                "unit": "oz",
                 "name": "fresh mozzarella cheese",
                 "comment": "",
                 "id": "941e5970-6c0c-40c1-a82e-c84bfab843c0",
@@ -2465,33 +2474,33 @@
         },
         "ingredients": [
             {
-                "sentence": "2 oz pancetta, finely chopped",
+                "sentence": "2 oz pancetta, chopped",
                 "quantity": "2",
                 "unit": "oz",
                 "name": "pancetta",
-                "comment": "finely chopped",
+                "comment": "chopped",
                 "id": "2b6706fd-8ece-4f82-8c53-88d180e9dfbe",
                 "isLabel": false
             },
             {
-                "sentence": "1 medium onion, finely chopped",
+                "sentence": "1 onion, chopped",
                 "quantity": "1",
-                "unit": "medium",
+                "unit": "",
                 "name": "onion",
-                "comment": "",
+                "comment": "chopped",
                 "id": "4279f057-7d42-4992-9511-e20f490fa46e",
                 "isLabel": false
             },
             {
-                "sentence": "1 celery, finely chopped",
+                "sentence": "1 celery, chopped",
                 "quantity": "1",
                 "unit": "",
                 "name": "celery",
-                "comment": "finely chopped",
+                "comment": "chopped",
                 "id": "b61d7953-f697-4d36-b972-f980d218869c",
                 "isLabel": false
             },
-            { "sentence": "1 carrot, finely chopped", "quantity": "1", "unit": "", "name": "carrot", "comment": "finely chopped", "id": "72957e66-0647-4421-b0e9-bf3d2214a192", "isLabel": false },
+            { "sentence": "1 carrot, chopped", "quantity": "1", "unit": "", "name": "carrot", "comment": "chopped", "id": "72957e66-0647-4421-b0e9-bf3d2214a192", "isLabel": false },
             {
                 "sentence": "3 tbsp unsalted butter",
                 "quantity": "3",
@@ -2512,22 +2521,22 @@
                 "id": "026b9ab5-1e20-4ad4-bc31-ae29b0472065",
                 "isLabel": false
             },
-            { "sentence": "Dash ground cloves", "quantity": "", "unit": "Dash", "name": "ground cloves", "comment": "", "id": "e82e7aa2-e4b1-46f1-b6e6-b306928192fe", "isLabel": false },
-            { "sentence": "Dash ground cinnamon", "quantity": "", "unit": "Dash", "name": "ground cinnamon", "comment": "", "id": "e17ab4f9-aa64-4c65-9fbe-9f31135912fb", "isLabel": false },
+            { "sentence": "dash ground cloves", "quantity": "dash", "unit": "", "name": "ground cloves", "comment": "", "id": "e82e7aa2-e4b1-46f1-b6e6-b306928192fe", "isLabel": false },
+            { "sentence": "dash ground cinnamon", "quantity": "dash", "unit": "", "name": "ground cinnamon", "comment": "", "id": "e17ab4f9-aa64-4c65-9fbe-9f31135912fb", "isLabel": false },
             {
-                "sentence": "1 tsp black pepper, freshly ground",
+                "sentence": "1 tsp black pepper",
                 "quantity": "1",
                 "unit": "tsp",
                 "name": "black pepper",
-                "comment": "freshly ground",
+                "comment": "",
                 "id": "2fc394b7-8542-4d89-97c3-0edf91070d37",
                 "isLabel": false
             },
             {
-                "sentence": "1 28 oz can tomatoes, chopped",
-                "quantity": "1 28",
+                "sentence": "28 oz tomatoes, chopped",
+                "quantity": "28",
                 "unit": "oz",
-                "name": "can tomatoes",
+                "name": "tomatoes",
                 "comment": "chopped",
                 "id": "e9f9d129-2342-4d6b-831a-f0d74b9775da",
                 "isLabel": false
@@ -2740,7 +2749,7 @@
                 "sentence": "1/2 tsp garlic,chopped",
                 "quantity": "1/2",
                 "unit": "tsp",
-                "name": "garlic",
+                "name": "garlic cloves",
                 "comment": "chopped",
                 "id": "be1b51ca-c4ea-41c5-a7f1-f2ee2ecaa562",
                 "isLabel": false
@@ -2846,8 +2855,8 @@
         "datePublished": "2011-08-01T13:16:40.000-04:00"
     },
     {
-        "title": "Greek Chicken Skewers with Yogurt Sauce (Chicken Souvlaki)",
-        "slug": "greek-chicken-skewers-with-yogurt-sauce-chicken-souvlaki",
+        "title": "Greek Chicken Skewers",
+        "slug": "greek-chicken-skewers",
         "description": "Greek Chicken Skewers (a.k.a. Souvlaki!) served with warm flatbread and tangy yogurt sauce. A simple and healthy weeknight meal. Cook on a grill or indoors on the stovetop.",
         "categories": ["Grill", "Dinner"],
         "cuisines": ["Greek", "Middle Eastern"],
@@ -2871,11 +2880,11 @@
         "ingredients": [
             { "sentence": "For the chicken:", "quantity": "", "unit": "", "name": "", "comment": "For the chicken:", "id": "bd1c3a8b-1687-4358-a61c-75f28e0b90a5", "isLabel": true },
             {
-                "sentence": "1 lemon, finely grated zest",
+                "sentence": "1 lemon, zested",
                 "quantity": "1",
                 "unit": "",
                 "name": "lemon",
-                "comment": "finely grated zest",
+                "comment": "zested",
                 "id": "a3729bfa-d724-49a9-bf16-c68674f6d55d",
                 "isLabel": false
             },
@@ -2893,7 +2902,7 @@
                 "sentence": "1 clove garlic, chopped",
                 "quantity": "1",
                 "unit": "clove",
-                "name": "garlic",
+                "name": "garlic cloves",
                 "comment": "chopped",
                 "id": "536a3a1f-c375-49be-bc17-2b138afe3941",
                 "isLabel": false
@@ -2979,11 +2988,11 @@
             },
             { "sentence": "1 c arugula", "quantity": "1", "unit": "c", "name": "arugula", "comment": "", "id": "8c06fdbc-b62d-452b-892a-4fd70e264ced", "isLabel": false },
             {
-                "sentence": "mint leaves, from 4 sprigs",
-                "quantity": "",
+                "sentence": "15 mint leaves",
+                "quantity": "15",
                 "unit": "",
                 "name": "mint leaves",
-                "comment": "from 4 sprigs",
+                "comment": "",
                 "id": "775cb008-ffcc-4783-9a4e-2af289390d70",
                 "isLabel": false
             }
@@ -3055,7 +3064,7 @@
             "unsaturatedFatContent": { "quantity": "0", "unit": "g" }
         },
         "ingredients": [
-            { "sentence": "For the marinade:", "quantity": "", "unit": "", "name": "For the marinade:", "comment": "", "id": "9153766d-984d-4574-b22a-ef4e9343eecd", "isLabel": true },
+            { "sentence": "For the marinade:", "quantity": "", "unit": "", "name": "", "comment": "For the marinade:", "id": "9153766d-984d-4574-b22a-ef4e9343eecd", "isLabel": true },
             {
                 "sentence": "2 tbsp rice vinegar",
                 "quantity": "2",
@@ -3076,25 +3085,25 @@
             },
             { "sentence": "1 tbsp honey", "quantity": "1", "unit": "tbsp", "name": "honey", "comment": "", "id": "01408044-51eb-4925-9d30-91e60257c576", "isLabel": false },
             {
-                "sentence": "1 tbsp fresh ginger, peeled, grated",
+                "sentence": "1 tbsp fresh ginger, peeled and grated",
                 "quantity": "1",
                 "unit": "tbsp",
                 "name": "fresh ginger",
-                "comment": "peeled, grated",
+                "comment": "peeled and grated",
                 "id": "78d61949-3fe0-4e70-89bd-cc37dffd3a75",
                 "isLabel": false
             },
             {
-                "sentence": "1 tsp chile pepper flakes",
+                "sentence": "1 tsp red chile pepper",
                 "quantity": "1",
                 "unit": "tsp",
-                "name": "chile pepper flakes",
+                "name": "red chile pepper",
                 "comment": "",
                 "id": "2e652adf-e2f0-4f1a-aa74-8d9dda81a122",
                 "isLabel": false
             },
             { "sentence": "1 tsp ground cumin", "quantity": "1", "unit": "tsp", "name": "ground cumin", "comment": "", "id": "34328500-efb3-4b59-ad7f-dc2075beb2f4", "isLabel": false },
-            { "sentence": "For the stir-fry:", "quantity": "", "unit": "", "name": "For the stir-fry:", "comment": "", "id": "4f30a35b-4f8c-4a80-8f03-3246e5249f99", "isLabel": true },
+            { "sentence": "For the stir-fry:", "quantity": "", "unit": "", "name": "", "comment": "For the stir-fry:", "id": "4f30a35b-4f8c-4a80-8f03-3246e5249f99", "isLabel": true },
             {
                 "sentence": "1 1/2 lb sirloin steak",
                 "quantity": "1 1/2",
@@ -3124,8 +3133,8 @@
                 "isLabel": false
             },
             {
-                "sentence": "3-4 green onions, 1/2 in pieces",
-                "quantity": "3-4",
+                "sentence": "4 green onions, 1/2 in pieces",
+                "quantity": "4",
                 "unit": "",
                 "name": "green onions",
                 "comment": "1/2 in pieces",
@@ -3133,17 +3142,17 @@
                 "isLabel": false
             },
             {
-                "sentence": "2 cloves garlic, sliced",
+                "sentence": "2 garlic cloves, sliced",
                 "quantity": "2",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "sliced",
                 "id": "650cdef5-1a4a-43ab-9399-aae43cb08318",
                 "isLabel": false
             },
             {
-                "sentence": "2-3 red serrano chilies, sliced",
-                "quantity": "2-3",
+                "sentence": "3 red serrano chilies, sliced",
+                "quantity": "3",
                 "unit": "",
                 "name": "red serrano chilies",
                 "comment": "sliced",
@@ -3151,10 +3160,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "1 in ginger, sliced",
+                "sentence": "1 in fresh ginger, sliced",
                 "quantity": "1",
                 "unit": "in",
-                "name": "ginger",
+                "name": "fresh ginger",
                 "comment": "sliced",
                 "id": "e6a6e3b8-6b42-4e5e-b101-fe5e68c71a03",
                 "isLabel": false
@@ -3273,7 +3282,7 @@
                 "id": "218daa8b-16ca-4790-b12c-ae82a6b5dffc",
                 "isLabel": false
             },
-            { "sentence": "3 large eggs, beaten", "quantity": "3", "unit": "large", "name": "eggs", "comment": "beaten", "id": "2112d3f4-7c2e-4458-8f80-3763b46a4aed", "isLabel": false },
+            { "sentence": "3 eggs, beaten", "quantity": "3", "unit": "", "name": "eggs", "comment": "beaten", "id": "2112d3f4-7c2e-4458-8f80-3763b46a4aed", "isLabel": false },
             {
                 "sentence": "salt and pepper, to taste",
                 "quantity": "",
@@ -3305,7 +3314,7 @@
                 "sentence": "2 tsp garlic, minced",
                 "quantity": "2",
                 "unit": "tsp",
-                "name": "garlic",
+                "name": "garlic cloves",
                 "comment": "minced",
                 "id": "2bf6f3de-b9d2-4441-af08-793510780cee",
                 "isLabel": false
@@ -3549,7 +3558,7 @@
         },
         "ingredients": [
             { "sentence": "For the orange sauce:", "quantity": "", "unit": "", "name": "", "comment": "For the orange sauce:", "id": "670fb88f-62de-44c0-8da0-fed85959a2d8", "isLabel": true },
-            { "sentence": "orange, zested", "quantity": "", "unit": "", "name": "orange", "comment": "zested", "id": "7e9c4721-1e74-4be1-ac9a-94f13298f0f0", "isLabel": false },
+            { "sentence": "1 orange, zested", "quantity": "1", "unit": "", "name": "orange", "comment": "zested", "id": "7e9c4721-1e74-4be1-ac9a-94f13298f0f0", "isLabel": false },
             { "sentence": "1/4 c orange juice", "quantity": "1/4", "unit": "c", "name": "orange juice", "comment": "", "id": "d799356d-6a25-437a-9c28-b6c4d1ee8d17", "isLabel": false },
             { "sentence": "1/4 c soy sauce", "quantity": "1/4", "unit": "c", "name": "soy sauce", "comment": "", "id": "9b257d29-e5f2-4050-b815-c633d084bef4", "isLabel": false },
             { "sentence": "1/4 c water", "quantity": "1/4", "unit": "c", "name": "water", "comment": "", "id": "1c553150-c623-4b42-91a8-5659ac02bc10", "isLabel": false },
@@ -3567,7 +3576,7 @@
                 "id": "2627608f-4556-41ad-b3be-19a2ab73c07d",
                 "isLabel": false
             },
-            { "sentence": "2 large eggs", "quantity": "2", "unit": "large", "name": "eggs", "comment": "", "id": "12cae26a-9b75-472d-80f6-3db2330fdf6c", "isLabel": false },
+            { "sentence": "2 eggs", "quantity": "2", "unit": "", "name": "eggs", "comment": "", "id": "12cae26a-9b75-472d-80f6-3db2330fdf6c", "isLabel": false },
             { "sentence": "1 tsp salt", "quantity": "1", "unit": "tsp", "name": "salt", "comment": "", "id": "e9a3c809-882c-4453-8129-6524bbcbed4d", "isLabel": false },
             { "sentence": "1/4 tsp black pepper", "quantity": "1/4", "unit": "tsp", "name": "black pepper", "comment": "", "id": "27647d4e-13bb-4a76-862b-dca077c95f74", "isLabel": false },
             { "sentence": "1/2 c cornstarch", "quantity": "1/2", "unit": "c", "name": "cornstarch", "comment": "", "id": "998cf0fd-85ab-47d2-8f85-59eda9b89e92", "isLabel": false },
@@ -3581,8 +3590,8 @@
                 "id": "f970346f-bc58-4df8-8e61-c80a1ec918be",
                 "isLabel": false
             },
-            { "sentence": "2 cloves garlic, chopped", "quantity": "2", "unit": "cloves", "name": "garlic", "comment": "chopped", "id": "79331920-9f66-482b-aa84-07a1eab9bcd3", "isLabel": false },
-            { "sentence": "1 large shallot, chopped", "quantity": "1", "unit": "large", "name": "shallot", "comment": "chopped", "id": "bca024f1-6fe5-4a2b-a520-090e3646a87f", "isLabel": false },
+            { "sentence": "2 garlic cloves, chopped", "quantity": "2", "unit": "", "name": "garlic cloves", "comment": "chopped", "id": "79331920-9f66-482b-aa84-07a1eab9bcd3", "isLabel": false },
+            { "sentence": "1 shallot, chopped", "quantity": "1", "unit": "", "name": "shallot", "comment": "chopped", "id": "bca024f1-6fe5-4a2b-a520-090e3646a87f", "isLabel": false },
             { "sentence": "To garnish and serve:", "quantity": "", "unit": "", "name": "", "comment": "To garnish and serve:", "id": "2b9a5724-9075-4bd6-9641-be7dc95f69fe", "isLabel": true },
             { "sentence": "scallions, sliced", "quantity": "", "unit": "", "name": "scallions", "comment": "sliced", "id": "14a6c673-5bb1-4c91-a82f-c5cfd9a91e9b", "isLabel": false },
             { "sentence": "sesame seeds, for garnish", "quantity": "", "unit": "", "name": "sesame seeds", "comment": "for garnish", "id": "7468da2c-cf5f-4865-a0d3-ccd61476c0dd", "isLabel": false },
@@ -3671,7 +3680,7 @@
                 "id": "97004835-eef1-4287-a1bc-d1cb1a417899",
                 "isLabel": false
             },
-            { "sentence": "Optional topping:s", "quantity": "", "unit": "", "name": "", "comment": "Optional toppings:", "id": "b1f8d533-26e8-415e-b98b-2b04786dd464", "isLabel": true },
+            { "sentence": "Optional toppings:", "quantity": "", "unit": "", "name": "", "comment": "Optional toppings:", "id": "b1f8d533-26e8-415e-b98b-2b04786dd464", "isLabel": true },
             {
                 "sentence": "1 white onion, chopped",
                 "quantity": "1",
@@ -3807,11 +3816,11 @@
                 "isLabel": false
             },
             {
-                "sentence": "lime wedges, for rimming the glass",
+                "sentence": "lime wedges, for rimming glass",
                 "quantity": "",
                 "unit": "",
                 "name": "lime wedges",
-                "comment": "for rimming the glass",
+                "comment": "for rimming glass",
                 "id": "347fedf6-1fbd-4a5b-bcd0-484d1ddd462d",
                 "isLabel": false
             },
@@ -4097,7 +4106,7 @@
             "unsaturatedFatContent": { "quantity": "0", "unit": "g" }
         },
         "ingredients": [
-            { "sentence": "For the tacos:", "quantity": "", "unit": "", "name": "", "comment": "For the tacos", "id": "8c497289-9224-40ac-82b1-0c0a18179260", "isLabel": true },
+            { "sentence": "For the tacos:", "quantity": "", "unit": "", "name": "", "comment": "For the tacos:", "id": "8c497289-9224-40ac-82b1-0c0a18179260", "isLabel": true },
             {
                 "sentence": "1 1/2 lb chicken breasts",
                 "quantity": "1 1/2",
@@ -4149,11 +4158,11 @@
                 "id": "18b7cf57-6e6b-4e81-b812-8d80dae0dfa6",
                 "isLabel": false
             },
-            { "sentence": "Toppings:", "quantity": "", "unit": "", "name": "Toppings:", "comment": "", "id": "3f30d291-4aae-472b-884d-30d590f874f0", "isLabel": true },
+            { "sentence": "Toppings:", "quantity": "", "unit": "", "name": "", "comment": "Toppings:", "id": "3f30d291-4aae-472b-884d-30d590f874f0", "isLabel": true },
             { "sentence": "queso fresco, crumbled", "quantity": "", "unit": "", "name": "queso fresco", "comment": "crumbled", "id": "e78f1ff3-8c32-4720-9aa1-fb9efb9711a3", "isLabel": false },
-            { "sentence": "red onion, diced", "quantity": "", "unit": "", "name": "red onion", "comment": "diced", "id": "c5d4870e-7be6-472c-a8ac-b158e0aea565", "isLabel": false },
-            { "sentence": "radish, diced", "quantity": "", "unit": "", "name": "radish", "comment": "diced", "id": "0ca05841-a5b0-48ca-9bb5-2cf7d5ae6ecb", "isLabel": true },
-            { "sentence": "cilantro", "quantity": "", "unit": "", "name": "cilantro", "comment": "", "id": "bc7bb0e2-03e3-4824-8d38-1de8be0c43d8", "isLabel": false }
+            { "sentence": "1 red onion, diced", "quantity": "1", "unit": "", "name": "red onion", "comment": "diced", "id": "c5d4870e-7be6-472c-a8ac-b158e0aea565", "isLabel": false },
+            { "sentence": "1 radish, diced", "quantity": "1", "unit": "", "name": "radish", "comment": "diced", "id": "0ca05841-a5b0-48ca-9bb5-2cf7d5ae6ecb", "isLabel": false },
+            { "sentence": "cilantro, chopped", "quantity": "", "unit": "", "name": "cilantro", "comment": "chopped", "id": "bc7bb0e2-03e3-4824-8d38-1de8be0c43d8", "isLabel": false }
         ],
         "instructions": [
             { "type": "h3", "children": [{ "text": "Combine the taco ingredients (except tortillas) in the slow cooker:" }] },
@@ -4228,7 +4237,7 @@
                 "id": "66c085bf-a303-4473-a69d-9f8e1e7f72d4",
                 "isLabel": false
             },
-            { "sentence": "1 clove garlic, minced", "quantity": "1", "unit": "clove", "name": "garlic", "comment": "minced", "id": "34daf036-8468-42c0-acc2-901ff35f1d86", "isLabel": false },
+            { "sentence": "1 clove garlic, minced", "quantity": "1", "unit": "clove", "name": "garlic cloves", "comment": "minced", "id": "34daf036-8468-42c0-acc2-901ff35f1d86", "isLabel": false },
             { "sentence": "2 1/4 c water", "quantity": "2 1/4", "unit": "c", "name": "water", "comment": "", "id": "d0e930aa-ce2d-4cca-854f-ddd395f82bb6", "isLabel": false },
             { "sentence": "1 tsp salt", "quantity": "1", "unit": "tsp", "name": "salt", "comment": "", "id": "48a7dcef-9f42-4901-bc64-aea6ff216695", "isLabel": false },
             { "sentence": "1 lime, zested", "quantity": "1", "unit": "", "name": "lime", "comment": "zested", "id": "5332f1c6-f535-4cc4-89c8-5dcb3b5aa7a8", "isLabel": false },
@@ -4309,7 +4318,7 @@
                 "isLabel": false
             },
             { "sentence": "1/2 c onion, chopped", "quantity": "1/2", "unit": "c", "name": "onion", "comment": "chopped", "id": "278b7bd5-070e-4ce0-a144-e17c1704c567", "isLabel": false },
-            { "sentence": "2 cloves garlic, minced", "quantity": "2", "unit": "cloves", "name": "garlic", "comment": "minced", "id": "d3a2613b-c5f9-4834-aa65-28ed6e6c5c45", "isLabel": false },
+            { "sentence": "2 garlic cloves, minced", "quantity": "2", "unit": "", "name": "garlic cloves", "comment": "minced", "id": "d3a2613b-c5f9-4834-aa65-28ed6e6c5c45", "isLabel": false },
             {
                 "sentence": "1 poblano",
                 "quantity": "1",
@@ -4329,8 +4338,8 @@
                 "isLabel": false
             },
             {
-                "sentence": "14.5 oz fire roasted tomatoes",
-                "quantity": "14.5",
+                "sentence": "14 oz fire roasted tomatoes",
+                "quantity": "14",
                 "unit": "oz",
                 "name": "fire roasted tomatoes",
                 "comment": "",
@@ -4429,7 +4438,7 @@
             "unsaturatedFatContent": { "quantity": "0", "unit": "g" }
         },
         "ingredients": [
-            { "sentence": "For the spice rub :", "quantity": "", "unit": "", "name": "", "comment": "For the spice rub", "id": "c5d6d0a8-ba99-49b6-8585-b967b0e0822f", "isLabel": true },
+            { "sentence": "For the spice rub:", "quantity": "", "unit": "", "name": "", "comment": "For the spice rub:", "id": "c5d6d0a8-ba99-49b6-8585-b967b0e0822f", "isLabel": true },
             { "sentence": "4 tbsp chili powder", "quantity": "4", "unit": "tbsp", "name": "chili powder", "comment": "", "id": "f7de1638-8e2c-4c63-8cbc-0e4d4e36beb1", "isLabel": false },
             {
                 "sentence": "1 tbsp kosher salt",
@@ -4584,7 +4593,7 @@
             "unsaturatedFatContent": { "quantity": "0", "unit": "g" }
         },
         "ingredients": [
-            { "sentence": "For the chicken:", "quantity": "", "unit": "", "name": "", "comment": "For the chicken", "id": "e2f6d1e1-41f1-44d7-a7c8-26c66e5cfd71", "isLabel": true },
+            { "sentence": "For the chicken:", "quantity": "", "unit": "", "name": "", "comment": "For the chicken:", "id": "e2f6d1e1-41f1-44d7-a7c8-26c66e5cfd71", "isLabel": true },
             {
                 "sentence": "1 1/3 lb chicken thighs",
                 "quantity": "1 1/3",
@@ -4594,7 +4603,7 @@
                 "id": "3292037d-411f-4753-9601-431a5ed6d46c",
                 "isLabel": false
             },
-            { "sentence": "2 cloves garlic, halved", "quantity": "2", "unit": "cloves", "name": "garlic", "comment": "halved", "id": "4a2c0f71-55ac-4ca8-9ffd-7838b385c19d", "isLabel": false },
+            { "sentence": "2 garlic cloves, halved", "quantity": "2", "unit": "", "name": "garlic cloves", "comment": "halved", "id": "4a2c0f71-55ac-4ca8-9ffd-7838b385c19d", "isLabel": false },
             { "sentence": "1/4 onion", "quantity": "1/4", "unit": "", "name": "onion", "comment": "", "id": "20c42e74-49a6-40c0-b3e1-f06a764044e1", "isLabel": false },
             { "sentence": "2 tsp sea salt", "quantity": "2", "unit": "tsp", "name": "sea salt", "comment": "", "id": "4b2bc9a3-cfa3-45d1-af76-17889de806b7", "isLabel": false },
             { "sentence": "For the tomatillo salsa:", "quantity": "", "unit": "", "name": "", "comment": "For the tomatillo salsa:", "id": "37c1a8b5-e31a-49fa-bf0e-ced2feb60f1b", "isLabel": true },
@@ -4616,7 +4625,7 @@
                 "id": "2a5ec9ef-6de4-4e95-8cf1-b5a04001a87d",
                 "isLabel": false
             },
-            { "sentence": "2 cloves garlic", "quantity": "2", "unit": "cloves", "name": "garlic", "comment": "", "id": "70734c10-f317-4e63-bf3c-e5bd3f77f5e0", "isLabel": false },
+            { "sentence": "2 garlic cloves", "quantity": "2", "unit": "", "name": "garlic cloves", "comment": "", "id": "70734c10-f317-4e63-bf3c-e5bd3f77f5e0", "isLabel": false },
             {
                 "sentence": "1/2 c yellow onion, chopped",
                 "quantity": "1/2",
@@ -4873,8 +4882,8 @@
                 "id": "c7082188-bf36-4788-a259-5abd0b088f11",
                 "isLabel": false
             },
-            { "sentence": "2 large eggs", "quantity": "2", "unit": "large", "name": "eggs", "comment": "", "id": "be922cae-66b5-48f4-9ddc-95f45626f3ab", "isLabel": false },
-            { "sentence": "4 cloves garlic, minced", "quantity": "4", "unit": "cloves", "name": "garlic", "comment": "minced", "id": "3b9767b3-8dc6-4ffc-aa6c-df115e35c3cc", "isLabel": false },
+            { "sentence": "2 eggs", "quantity": "2", "unit": "", "name": "eggs", "comment": "", "id": "be922cae-66b5-48f4-9ddc-95f45626f3ab", "isLabel": false },
+            { "sentence": "4 garlic cloves, minced", "quantity": "4", "unit": "", "name": "garlic cloves", "comment": "minced", "id": "3b9767b3-8dc6-4ffc-aa6c-df115e35c3cc", "isLabel": false },
             { "sentence": "1 shallot, minced", "quantity": "1", "unit": "", "name": "shallot", "comment": "minced", "id": "6b52825f-9fb0-4374-b748-9b320978ffd3", "isLabel": false },
             {
                 "sentence": "1 carrot, shredded",
@@ -5133,38 +5142,38 @@
                 "isLabel": false
             },
             {
-                "sentence": "1 small shallot, roughly chopped",
+                "sentence": "1 shallot, chopped",
                 "quantity": "1",
-                "unit": "small",
+                "unit": "",
                 "name": "shallot",
-                "comment": "roughly chopped",
+                "comment": "chopped",
                 "id": "65893184-40d5-4e56-be9e-161162c0cf02",
                 "isLabel": false
             },
             {
-                "sentence": "2 tbsp chopped fresh cilantro leaves and tender stems, plus more for garnish",
+                "sentence": "2 tbsp cilantro, chopped",
                 "quantity": "2",
                 "unit": "tbsp",
-                "name": "fresh cilantro leaves and tender stems",
-                "comment": "chopped, plus more for garnish",
+                "name": "cilantro",
+                "comment": "chopped",
                 "id": "31ea2fc1-37a3-4f0e-8260-d80d44a7d747",
                 "isLabel": false
             },
             {
-                "sentence": "1 small jalapeno pepper, seeds removed",
+                "sentence": "1 jalapeno pepper",
                 "quantity": "1",
-                "unit": "small",
+                "unit": "",
                 "name": "jalapeno pepper",
-                "comment": "seeds removed",
+                "comment": "",
                 "id": "1410de87-94df-44c4-9aef-7e6d432871f0",
                 "isLabel": false
             },
             {
-                "sentence": "1 small stalk lemongrass, roughly chopped",
+                "sentence": "1 stalk lemongrass, chopped",
                 "quantity": "1",
-                "unit": "small stalk",
+                "unit": "stalk",
                 "name": "lemongrass",
-                "comment": "roughly chopped",
+                "comment": "chopped",
                 "id": "cb410292-09ce-4701-ae38-81fcee48e7b6",
                 "isLabel": false
             },
@@ -5231,7 +5240,7 @@
                 "id": "c59bab04-a4b7-4b0a-afae-93afd179def0",
                 "isLabel": false
             },
-            { "sentence": "rice, for serving", "quantity": "", "unit": "", "name": "rice", "comment": "for serving", "id": "ae2309b1-98fe-42dd-98cc-131f41e917d6", "isLabel": false }
+            { "sentence": "cooked rice, for serving", "quantity": "", "unit": "", "name": "cooked rice", "comment": "for serving", "id": "ae2309b1-98fe-42dd-98cc-131f41e917d6", "isLabel": false }
         ],
         "instructions": [
             { "type": "h3", "children": [{ "text": "Make the aromatic oil:" }] },
@@ -5334,7 +5343,7 @@
                 "id": "4cc2df66-5e18-4653-bf90-369155f8cfe3",
                 "isLabel": false
             },
-            { "sentence": "2 cloves garlic", "quantity": "2", "unit": "cloves", "name": "garlic", "comment": "", "id": "9bc3023f-326e-4aea-a671-79984ab00855", "isLabel": false },
+            { "sentence": "2 garlic cloves", "quantity": "2", "unit": "", "name": "garlic cloves", "comment": "", "id": "9bc3023f-326e-4aea-a671-79984ab00855", "isLabel": false },
             { "sentence": "1 lime, zested", "quantity": "1", "unit": "", "name": "lime", "comment": "zested", "id": "6899a10f-4140-4279-b3f4-7a9dcbd0657d", "isLabel": false },
             {
                 "sentence": "4 lime leaves",
@@ -5376,7 +5385,7 @@
             },
             { "sentence": "1/2 tsp salt", "quantity": "1/2", "unit": "tsp", "name": "salt", "comment": "", "id": "cac5961e-17a1-4432-b99f-0e0701392bc4", "isLabel": false },
             { "sentence": "1 tbsp coconut oil", "quantity": "1", "unit": "tbsp", "name": "coconut oil", "comment": "", "id": "ddb0b7b4-b9d3-4470-af38-9ecf7f7358cd", "isLabel": false },
-            { "sentence": "1 shallot, sliced", "quantity": "1", "unit": "", "name": "shallot", "comment": "thin", "id": "ce99d823-b318-4afe-bfd3-74999378fcd2", "isLabel": false },
+            { "sentence": "1 shallot, sliced", "quantity": "1", "unit": "", "name": "shallot", "comment": "sliced", "id": "ce99d823-b318-4afe-bfd3-74999378fcd2", "isLabel": false },
             {
                 "sentence": "14 oz coconut milk",
                 "quantity": "14",
@@ -5539,10 +5548,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "8 chili red peppers, dried",
+                "sentence": "8 red chili peppers, dried",
                 "quantity": "8",
                 "unit": "",
-                "name": "chili red peppers",
+                "name": "red chili peppers",
                 "comment": "dried",
                 "id": "3cce423c-d098-4b40-8d62-4f5f8ccdb84f",
                 "isLabel": false
@@ -5575,10 +5584,10 @@
                 "isLabel": false
             },
             {
-                "sentence": "3 cloves garlic, sliced",
+                "sentence": "3 garlic cloves, sliced",
                 "quantity": "3",
-                "unit": "cloves",
-                "name": "garlic",
+                "unit": "",
+                "name": "garlic cloves",
                 "comment": "sliced",
                 "id": "08db958d-eda2-4df8-8420-d44b60b0fb9c",
                 "isLabel": false

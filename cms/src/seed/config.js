@@ -19,7 +19,7 @@ export const images = [
     'fettuccine-alfredo-with-mushrooms.jpg',
     'fresh-basil-pesto.jpg',
     'ginger-beef-stir-fry.jpg',
-    'greek-chicken-skewers-with-yogurt-sauce-chicken-souvlaki.jpg',
+    'greek-chicken-skewers.jpg',
     'greek-salad.jpg',
     'homemade-pizza.jpg',
     'indian-style-rice.jpg',
