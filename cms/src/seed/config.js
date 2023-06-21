@@ -30,6 +30,7 @@ export const images = [
     'naan-bread.jpg',
     'orange-chicken.jpg',
     'paccheri-with-quick-sausage-ragu.jpg',
+    'pad-thai.jpg',
     'pasta-carbonara.jpg',
     'peach-bellini-cocktails.jpg',
     'peach-margarita.jpg',
@@ -43,7 +44,6 @@ export const images = [
     'thai-green-curry.jpg',
     'thai-iced-tea-cha-yen.jpg',
     'vegetable-fried-rice.jpg',
-    'vegetarian-pad-thai.jpg',
     'watermelon-lemonade.jpg',
 ]
 
