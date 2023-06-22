@@ -6,125 +6,162 @@
  */
 
 export interface Config {
-    collections: {
-        categories: Category
-        cuisines: Cuisine
-        media: Media
-        recipes: Recipe
-        users: User
-    }
-    globals: {}
+  collections: {
+    categories: Category;
+    cuisines: Cuisine;
+    media: Media;
+    recipes: Recipe;
+    users: User;
+  };
+  globals: {};
 }
 export interface Category {
-    id: string
-    name?: string
-    updatedAt: string
-    createdAt: string
+  id: string;
+  name?: string;
+  updatedAt: string;
+  createdAt: string;
 }
 export interface Cuisine {
-    id: string
-    name?: string
-    updatedAt: string
-    createdAt: string
+  id: string;
+  name?: string;
+  updatedAt: string;
+  createdAt: string;
 }
 export interface Media {
-    id: string
-    alt: string
-    uploadedBy?: string | User
-    updatedAt: string
-    createdAt: string
-    url?: string
-    filename?: string
-    mimeType?: string
-    filesize?: number
-    width?: number
-    height?: number
-    sizes?: {
-        thumbnail?: {
-            url?: string
-            width?: number
-            height?: number
-            mimeType?: string
-            filesize?: number
-            filename?: string
-        }
-        hero?: {
-            url?: string
-            width?: number
-            height?: number
-            mimeType?: string
-            filesize?: number
-            filename?: string
-        }
-    }
+  id: string;
+  alt: string;
+  uploadedBy?: string | User;
+  updatedAt: string;
+  createdAt: string;
+  url?: string;
+  filename?: string;
+  mimeType?: string;
+  filesize?: number;
+  width?: number;
+  height?: number;
+  sizes?: {
+    thumbnail?: {
+      url?: string;
+      width?: number;
+      height?: number;
+      mimeType?: string;
+      filesize?: number;
+      filename?: string;
+    };
+    hero?: {
+      url?: string;
+      width?: number;
+      height?: number;
+      mimeType?: string;
+      filesize?: number;
+      filename?: string;
+    };
+  };
 }
 export interface User {
-    id: string
-    image?: string | Media
-    name?: string
-    role: 'admin' | 'user'
-    updatedAt: string
-    createdAt: string
-    email?: string
-    resetPasswordToken?: string
-    resetPasswordExpiration?: string
-    salt?: string
-    hash?: string
-    loginAttempts?: number
-    lockUntil?: string
-    password?: string
+  id: string;
+  image?: string | Media;
+  name?: string;
+  role: 'admin' | 'user';
+  updatedAt: string;
+  createdAt: string;
+  email?: string;
+  resetPasswordToken?: string;
+  resetPasswordExpiration?: string;
+  salt?: string;
+  hash?: string;
+  loginAttempts?: number;
+  lockUntil?: string;
+  password?: string;
 }
 export interface Recipe {
-    id: string
-    title: string
-    image?: Media
-    description?: string
-    rating?: number
-    servings?: {
-        quantity?: string
-        yield?: string
-    }
-    prepTime?: {
-        hours?: string
-        minutes?: string
-    }
-    cookTime?: {
-        hours?: string
-        minutes?: string
-    }
-    cuisines?: Cuisine[]
-    categories?: Category[]
-    keywords?: string
-    nutrition?: {
-        quantity?: string
-        unit?: string
-        id?: string
-    }[]
-    ingredients?: {
-        sentence?: string
-        quantity?: string
-        unit?: string
-        name?: string
-        comment?: string
-        isLabel?: boolean
-        id?: string
-    }[]
-    instructions?: {
-        [k: string]: unknown
-    }[]
-    recipeSchema?:
-        | {
-              [k: string]: unknown
-          }
-        | unknown[]
-        | string
-        | number
-        | boolean
-        | null
-    slug?: string
-    author?: User
-    datePublished?: string
-    updatedAt: string
-    createdAt: string
-    _status?: 'draft' | 'published'
+  id: string;
+  title: string;
+  image?: string | Media;
+  description?: string;
+  rating?: number;
+  servings?: {
+    quantity?: string;
+    yield?: string;
+  };
+  prepTime?: {
+    hours?: string;
+    minutes?: string;
+  };
+  cookTime?: {
+    hours?: string;
+    minutes?: string;
+  };
+  cuisines?: string[] | Cuisine[];
+  categories?: string[] | Category[];
+  keywords?: string;
+  nutrition?: {
+    calories?: {
+      quantity?: string;
+      unit?: string;
+    };
+    carbohydrateContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    cholesterolContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    fiberContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    proteinContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    saturatedFatContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    sodiumContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    sugarContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    fatContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+    unsaturatedFatContent?: {
+      quantity?: string;
+      unit?: string;
+    };
+  };
+  ingredients?: {
+    isLabel?: boolean;
+    sentence?: string;
+    quantity?: string;
+    unit?: string;
+    name?: string;
+    comment?: string;
+    id?: string;
+  }[];
+  instructions?: {
+    [k: string]: unknown;
+  }[];
+  recipeSchema?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  slug?: string;
+  author?: string | User;
+  datePublished?: string;
+  updatedAt: string;
+  createdAt: string;
+  _status?: 'draft' | 'published';
 }

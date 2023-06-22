@@ -1,3 +1,29 @@
+#field-nutrition > div > header > h3,
+#field-ingredients h3,
+.tabs-field__tab.tabs-field__tab-instructions label.field-label {
+    font-size: 1.4423076923rem;
+    font-weight: 500;
+}
+
+#field-nutrition > div > header > h3,
+.tabs-field__tab.tabs-field__tab-instructions label.field-label {
+    margin-bottom: 10px;
+}
+
+#field-nutrition .render-fields h3 {
+    font-size: 15.5px;
+    font-weight: 500;
+}
+
+#field-nutrition .render-fields .render-fields .field-type.text:last-of-type {
+    margin-bottom: 50px;
+}
+
+#field-nutrition .render-fields .render-fields .field-type.text:first-of-type,
+#field-nutrition #field-nutrition__unsaturatedFatContent > div > div > div > .field-type.text:nth-child(2) {
+    margin-bottom: 0;
+}
+
 .input-range-container {
     margin-bottom: 1.9230769231rem;
 }

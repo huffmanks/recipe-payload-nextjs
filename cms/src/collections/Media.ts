@@ -1,15 +1,17 @@
 import path from 'path'
+import payload from 'payload'
 import type { CollectionBeforeOperationHook, CollectionConfig } from 'payload/types'
 
 import { toKebabCase } from '../utilities/toKebabCase'
 
-const beforeOperationHook: CollectionBeforeOperationHook = async ({ args }) => {
-    const files = args.req?.files
-    if (files && files.file && files.file.name) {
-        const tmp = files.file.name.split('.')[0]
-        files.file.name = toKebabCase(tmp)
+const beforeOperationHook: CollectionBeforeOperationHook = async ({ args, operation }) => {
+    if (operation !== 'delete') {
+        const files = args.req?.files
+        if (files && files.file && files.file.name) {
+            const tmp = files.file.name.split('.')[0]
+            files.file.name = toKebabCase(tmp)
+        }
     }
-
     return args
 }
 

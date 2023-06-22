@@ -41,7 +41,7 @@ const dropDB = async () => {
     })
 
     console.log(`
-    ${red}Images deleted:${reset} ${cyan}${underscore}${deletedImages.docs.length * 2}${reset}
+    ${red}Images deleted:${reset} ${cyan}${underscore}${deletedImages.docs.length * 3}${reset}
     ${red}Categories deleted:${reset} ${cyan}${underscore}${deletedCategories.docs.length}${reset}
     ${red}Cuisines deleted:${reset} ${cyan}${underscore}${deletedCuisines.docs.length}${reset}
     ${red}Recipes deleted:${reset} ${cyan}${underscore}${deletedRecipes.docs.length}${reset}\n

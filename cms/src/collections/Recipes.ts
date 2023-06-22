@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 import payload from 'payload'
 import dotenv from 'dotenv'
-import { CollectionAfterDeleteHook, CollectionBeforeChangeHook, CollectionConfig } from 'payload/types'
+import { CollectionAfterDeleteHook, CollectionConfig } from 'payload/types'
 import { RowLabelArgs } from 'payload/dist/admin/components/forms/RowLabel/types'
 
 import DurationPicker from '../components/DurationPicker/config'
@@ -12,18 +12,13 @@ import { formatIngredientSentence } from '../utilities/formatIngredientSentence'
 
 dotenv.config()
 
-const beforeChangeHook: CollectionBeforeChangeHook = async ({ data, originalDoc }) => {
-    if (!originalDoc) return data
-
-    const recipeSchema = await generateRecipeSchema(originalDoc.id)
-    return { ...data, recipeSchema: JSON.stringify(recipeSchema) }
-}
-
 const afterDeleteHook: CollectionAfterDeleteHook = async ({ doc }) => {
-    await payload.delete({
-        collection: 'media',
-        id: doc.image.id,
-    })
+    if (doc?.image?.id) {
+        await payload.delete({
+            collection: 'media',
+            id: doc.image.id,
+        })
+    }
 
     return doc
 }
@@ -65,8 +60,7 @@ const Recipes: CollectionConfig = {
         drafts: true,
     },
     hooks: {
-        beforeValidate: [formatSlug, formatIngredientSentence],
-        beforeChange: [beforeChangeHook],
+        beforeValidate: [formatSlug, formatIngredientSentence, generateRecipeSchema],
         afterDelete: [afterDeleteHook],
     },
     fields: [
@@ -79,7 +73,6 @@ const Recipes: CollectionConfig = {
             name: 'image',
             type: 'upload',
             relationTo: 'media',
-            maxDepth: 3,
             filterOptions: {
                 mimeType: { contains: 'image' },
             },
@@ -113,17 +106,265 @@ const Recipes: CollectionConfig = {
                             type: 'text',
                             label: 'Keywords (healthy, chocolate, etc.)',
                         },
+                    ],
+                },
+                {
+                    label: 'Nutrition',
+                    description: 'Insert any nutrition information for the recipe.',
+                    fields: [
                         {
                             name: 'nutrition',
-                            type: 'array',
+                            type: 'group',
                             fields: [
                                 {
-                                    name: 'quantity',
-                                    type: 'text',
+                                    name: 'calories',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
                                 },
                                 {
-                                    name: 'unit',
-                                    type: 'text',
+                                    name: 'carbohydrateContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'cholesterolContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'fiberContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'proteinContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'saturatedFatContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'sodiumContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'sugarContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'fatContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: 'unsaturatedFatContent',
+                                    type: 'group',
+                                    fields: [
+                                        {
+                                            type: 'row',
+                                            fields: [
+                                                {
+                                                    name: 'quantity',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                                {
+                                                    name: 'unit',
+                                                    type: 'text',
+                                                    admin: {
+                                                        width: '40%',
+                                                    },
+                                                },
+                                            ],
+                                        },
+                                    ],
                                 },
                             ],
                         },

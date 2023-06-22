@@ -1,0 +1,71 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "headline": "Red Curry Poached Salmon",
+    "name": "Red Curry Poached Salmon",
+    "datePublished": "2023-02-21T17:00:00.000Z",
+    "dateModified": "2023-06-22T01:05:16.508Z",
+    "description": "This quick and easy weeknight meal of salmon gently poached in a Thai-inspired red curry is made in the microwave and can be made in under 30 minutes.",
+    "author": { "@type": "Person", "name": "Kevin" },
+    "image": { "@type": "ImageObject", "url": "http://localhost:3001/media/red-curry-poached-salmon-900x600.jpg", "width": 900, "height": 600 },
+    "recipeCuisine": ["American"],
+    "recipeCategory": ["Lunch", "Dinner"],
+    "keywords": "Microwave Red Curry Poached Salmon, red curry, red curry paste, salmon, vegetable oil, shallot, cilantro, jalapeno pepper, lemongrass, ginger, brown sugar, lime juice, rice",
+    "prepTime": "PT0H10M",
+    "cookTime": "PT0H14M",
+    "totalTime": "PT0H24M",
+    "recipeYield": ["4", ""],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": null },
+    "nutrition": {
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "524 kcal",
+            "carbohydrateContent": "11 g",
+            "cholesterolContent": "71 mg",
+            "fiberContent": "1 g",
+            "proteinContent": "28 g",
+            "saturatedFatContent": "22 g",
+            "sodiumContent": "410 mg",
+            "sugarContent": "4 g",
+            "fatContent": "42 g",
+            "unsaturatedFatContent": "0 g"
+        }
+    },
+    "recipeIngredient": [
+        "2 tbsp vegetable oil",
+        "1  shallot, chopped",
+        "2 tbsp cilantro, chopped",
+        "1  jalapeno pepper",
+        "1 stalk lemongrass, chopped",
+        "1 in fresh ginger",
+        "14 oz coconut milk",
+        "1 tbsp red curry paste",
+        "2 tsp light brown sugar",
+        "3/4 tsp kosher salt, divided",
+        "1 tbsp lime juice",
+        "4  salmon filets",
+        "  cooked rice, for serving"
+    ],
+    "recipeInstructions": [
+        {
+            "@type": "HowToStep",
+            "name": "Make the aromatic oil:",
+            "text": "Process the oil, shallots, cilantro, jalapeno, lemongrass, and ginger in a mini food processor until very finely chopped, about 30 seconds, stopping to scrape down sides as needed.  Don&rsquo;t have a mini food processor? Very finely chop the shallots, cilantro, jalapeno, lemongrass, and ginger, and then stir in the oil. (You can do this directly in the pie plate&mdash;more on that below.)"
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Cook the mixture:",
+            "text": "Spoon the mixture into a 9 1/2-inch microwave-safe glass pie plate. Microwave, uncovered, on high until it sizzles and is fragrant, 3 to 4 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Add the coconut milk and curry paste:",
+            "text": "Stir in the coconut milk, curry paste, brown sugar, and 1/2 tsp salt until combined. Microwave, uncovered, on high until the coconut milk mixture is simmering and the flavors meld, 3 to 4 minutes."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "Cook the salmon:",
+            "text": "Stir in the lime juice and place the salmon filets, evenly spaced apart, in coconut milk mixture. Sprinkle the remaining 1/4 tsp salt on the salmon. Cover tightly with plastic wrap and microwave on medium (50% power) until the salmon is cooked to your desired degree of doneness, about 6 minutes.  We developed and tested the recipe in a 1,000 and 1,250-watt microwave. You may need to cook the salmon for longer, in 1-minute intervals, depending on the power of your microwave and how you like your salmon cooked. Garnish with cilantro and serve scooped over cooked rice.  Did you love the recipe? Leave us a comment below!"
+        }
+    ]
+}

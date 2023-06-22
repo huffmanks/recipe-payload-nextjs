@@ -4,6 +4,7 @@ const path = require('path')
 
 const { images, categories, cuisines, reset, underscore, cyan, green } = require('./config')
 const recipeData = require('./recipeData.json')
+const { generateRecipeSchema } = require('../utilities/generateRecipeSchema')
 
 require('dotenv').config()
 
@@ -118,7 +119,7 @@ const seedDB = async () => {
     )
 
     console.log(`
-    ${green}Images created:${reset} ${cyan}${underscore}${createdImages.length * 2}${reset}
+    ${green}Images created:${reset} ${cyan}${underscore}${createdImages.length * 3}${reset}
     ${green}Categories created:${reset} ${cyan}${underscore}${createdCategories.length}${reset}
     ${green}Cuisines created:${reset} ${cyan}${underscore}${createdCuisines.length}${reset}
     ${green}Recipes created:${reset} ${cyan}${underscore}${createdRecipes.length}${reset}\n
